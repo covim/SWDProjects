@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/5mSEdu5Q1sRN9zJe0PxPvlpo4JA26jz36esXUF4XzxgGLploeJ0Q2HjsmH/IgcuejnmJI6NtDSFLG2/WqEBeQ==",
+  "success": true,
+  "projectFilePath": "C:\\SwDeveloper2022\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.DataNet\\Swd.PlayCollector.DataNet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
