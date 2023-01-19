@@ -1,0 +1,10 @@
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.DataNet\bin\Debug\Swd.PlayCollector.DataNet.dll.config
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.DataNet\bin\Debug\Swd.PlayCollector.DataNet.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.DataNet\bin\Debug\Swd.PlayCollector.DataNet.pdb
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.DataNet\bin\Debug\EntityFramework.SqlServer.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.DataNet\bin\Debug\EntityFramework.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.DataNet\obj\Debug\Swd.PlayCollector.DataNet.csproj.AssemblyReference.cache
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.DataNet\obj\Debug\Swd.PlayCollector.DataNet.csproj.CoreCompileInputs.cache
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.DataNet\obj\Debug\Swd.PlayCollector.DataNet.csproj.CopyComplete
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.DataNet\obj\Debug\Swd.PlayCollector.DataNet.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.DataNet\obj\Debug\Swd.PlayCollector.DataNet.pdb

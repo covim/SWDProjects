@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SwdPlayCollectorDataNetStoreContainer" CdmEntityContainer="PlayCollector">
+    <EntitySetMapping Name="CollectionItems">
+      <EntityTypeMapping TypeName="Swd.PlayCollector.DataNet.CollectionItem">
+        <MappingFragment StoreEntitySet="t100CollectionItem">
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ReleaseYear" ColumnName="COLReleaseYear" />
+          <ScalarProperty Name="Id" ColumnName="COLId" />
+          <ScalarProperty Name="COL_LOCId" ColumnName="COL_LOCId" />
+          <ScalarProperty Name="COL_THEId" ColumnName="COL_THEId" />
+          <ScalarProperty Name="Name" ColumnName="COLName" />
+          <ScalarProperty Name="Number" ColumnName="COLNumber" />
+          <ScalarProperty Name="Description" ColumnName="COLDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Locations">
+      <EntityTypeMapping TypeName="Swd.PlayCollector.DataNet.Location">
+        <MappingFragment StoreEntitySet="t800Location">
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Id" ColumnName="LOCId" />
+          <ScalarProperty Name="Name" ColumnName="LOCName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Themes">
+      <EntityTypeMapping TypeName="Swd.PlayCollector.DataNet.Theme">
+        <MappingFragment StoreEntitySet="t810Theme">
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Id" ColumnName="THEId" />
+          <ScalarProperty Name="Name" ColumnName="THEName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

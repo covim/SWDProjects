@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Swd.PlayCollector.DataNet.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="Swd.PlayCollector.DataNet.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="t100CollectionItem">
           <Key>
             <PropertyRef Name="COLId" />
@@ -13,9 +13,13 @@
           <Property Name="COL_LOCId" Type="bigint" />
           <Property Name="COL_THEId" Type="bigint" />
           <Property Name="COLName" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="COLReleaseyear" Type="int" />
+          <Property Name="COLReleaseYear" Type="int" />
           <Property Name="COLNumber" Type="nvarchar" MaxLength="50" />
           <Property Name="COLDescription" Type="nvarchar(max)" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="Created" Type="datetime" />
+          <Property Name="Updated" Type="datetime" />
         </EntityType>
         <EntityType Name="t800Location">
           <Key>
@@ -23,6 +27,10 @@
           </Key>
           <Property Name="LOCId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="LOCName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="Created" Type="datetime" />
+          <Property Name="Updated" Type="datetime" />
         </EntityType>
         <EntityType Name="t810Theme">
           <Key>
@@ -30,6 +38,10 @@
           </Key>
           <Property Name="THEId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="THEName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+          <Property Name="Created" Type="datetime" />
+          <Property Name="Updated" Type="datetime" />
         </EntityType>
         <Association Name="FK_t100CollectionItem_t800Location">
           <End Role="t800Location" Type="Self.t800Location" Multiplicity="0..1" />
@@ -68,8 +80,7 @@
             <End Role="t100CollectionItem" EntitySet="t100CollectionItem" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Swd.PlayCollector.DataNet" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -81,11 +92,15 @@
           <Property Name="COL_LOCId" Type="Int64" />
           <Property Name="COL_THEId" Type="Int64" />
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Releaseyear" Type="Int32" />
           <Property Name="Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Location" Relationship="Self.FK_t100CollectionItem_t800Location" FromRole="t100CollectionItem" ToRole="t800Location" />
           <NavigationProperty Name="Theme" Relationship="Self.FK_t100CollectionItem_t810Theme" FromRole="t100CollectionItem" ToRole="t810Theme" />
+          <Property Name="ReleaseYear" Type="Int32" />
+          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Created" Type="DateTime" Precision="3" />
+          <Property Name="Updated" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="Location">
           <Key>
@@ -94,6 +109,10 @@
           <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="CollectionItems" Relationship="Self.FK_t100CollectionItem_t800Location" FromRole="t800Location" ToRole="t100CollectionItem" />
+          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Created" Type="DateTime" Precision="3" />
+          <Property Name="Updated" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="Theme">
           <Key>
@@ -102,6 +121,10 @@
           <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="CollectionItems" Relationship="Self.FK_t100CollectionItem_t810Theme" FromRole="t810Theme" ToRole="t100CollectionItem" />
+          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Created" Type="DateTime" Precision="3" />
+          <Property Name="Updated" Type="DateTime" Precision="3" />
         </EntityType>
         <Association Name="FK_t100CollectionItem_t800Location">
           <End Role="t800Location" Type="Swd.PlayCollector.DataNet.Location" Multiplicity="0..1" />
@@ -149,11 +172,15 @@
           <EntitySetMapping Name="CollectionItems">
             <EntityTypeMapping TypeName="Swd.PlayCollector.DataNet.CollectionItem">
               <MappingFragment StoreEntitySet="t100CollectionItem">
+                <ScalarProperty Name="Updated" ColumnName="Updated" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ReleaseYear" ColumnName="COLReleaseYear" />
                 <ScalarProperty Name="Id" ColumnName="COLId" />
                 <ScalarProperty Name="COL_LOCId" ColumnName="COL_LOCId" />
                 <ScalarProperty Name="COL_THEId" ColumnName="COL_THEId" />
                 <ScalarProperty Name="Name" ColumnName="COLName" />
-                <ScalarProperty Name="Releaseyear" ColumnName="COLReleaseyear" />
                 <ScalarProperty Name="Number" ColumnName="COLNumber" />
                 <ScalarProperty Name="Description" ColumnName="COLDescription" />
               </MappingFragment>
@@ -162,6 +189,10 @@
           <EntitySetMapping Name="Locations">
             <EntityTypeMapping TypeName="Swd.PlayCollector.DataNet.Location">
               <MappingFragment StoreEntitySet="t800Location">
+                <ScalarProperty Name="Updated" ColumnName="Updated" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
                 <ScalarProperty Name="Id" ColumnName="LOCId" />
                 <ScalarProperty Name="Name" ColumnName="LOCName" />
               </MappingFragment>
@@ -170,6 +201,10 @@
           <EntitySetMapping Name="Themes">
             <EntityTypeMapping TypeName="Swd.PlayCollector.DataNet.Theme">
               <MappingFragment StoreEntitySet="t810Theme">
+                <ScalarProperty Name="Updated" ColumnName="Updated" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
                 <ScalarProperty Name="Id" ColumnName="THEId" />
                 <ScalarProperty Name="Name" ColumnName="THEName" />
               </MappingFragment>

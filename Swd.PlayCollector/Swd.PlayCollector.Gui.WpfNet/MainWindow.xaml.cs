@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Swd.PlayCollector.DataNet;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xaml;
 
 namespace Swd.PlayCollector.Gui.WpfNet
 {
@@ -23,6 +25,15 @@ namespace Swd.PlayCollector.Gui.WpfNet
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Location loc = new Location();
+            loc.Name = "Testlocation";
+
+            Swd.PlayCollector.DataNet.PlayCollector model = new Swd.PlayCollector.DataNet.PlayCollector();
+            model.Locations.Add(loc);
         }
     }
 }

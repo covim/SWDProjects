@@ -18,9 +18,13 @@ namespace Swd.PlayCollector.DataNet
         public Nullable<long> COL_LOCId { get; set; }
         public Nullable<long> COL_THEId { get; set; }
         public string Name { get; set; }
-        public Nullable<int> Releaseyear { get; set; }
         public string Number { get; set; }
         public string Description { get; set; }
+        public Nullable<int> ReleaseYear { get; set; }
+        public string CreatedBy { get; set; }
+        public string UpdatedBy { get; set; }
+        public Nullable<System.DateTime> Created { get; set; }
+        public Nullable<System.DateTime> Updated { get; set; }
     
         public virtual Location Location { get; set; }
         public virtual Theme Theme { get; set; }

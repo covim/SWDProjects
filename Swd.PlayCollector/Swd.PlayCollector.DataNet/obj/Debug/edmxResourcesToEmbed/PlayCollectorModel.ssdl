@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Swd.PlayCollector.DataNet.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="t100CollectionItem">
+    <Key>
+      <PropertyRef Name="COLId" />
+    </Key>
+    <Property Name="COLId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="COL_LOCId" Type="bigint" />
+    <Property Name="COL_THEId" Type="bigint" />
+    <Property Name="COLName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="COLReleaseYear" Type="int" />
+    <Property Name="COLNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="COLDescription" Type="nvarchar(max)" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="Updated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="t800Location">
+    <Key>
+      <PropertyRef Name="LOCId" />
+    </Key>
+    <Property Name="LOCId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LOCName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="Updated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="t810Theme">
+    <Key>
+      <PropertyRef Name="THEId" />
+    </Key>
+    <Property Name="THEId" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="THEName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="Created" Type="datetime" />
+    <Property Name="Updated" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_t100CollectionItem_t800Location">
+    <End Role="t800Location" Type="Self.t800Location" Multiplicity="0..1" />
+    <End Role="t100CollectionItem" Type="Self.t100CollectionItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t800Location">
+        <PropertyRef Name="LOCId" />
+      </Principal>
+      <Dependent Role="t100CollectionItem">
+        <PropertyRef Name="COL_LOCId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t100CollectionItem_t810Theme">
+    <End Role="t810Theme" Type="Self.t810Theme" Multiplicity="0..1" />
+    <End Role="t100CollectionItem" Type="Self.t100CollectionItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t810Theme">
+        <PropertyRef Name="THEId" />
+      </Principal>
+      <Dependent Role="t100CollectionItem">
+        <PropertyRef Name="COL_THEId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SwdPlayCollectorDataNetStoreContainer">
+    <EntitySet Name="t100CollectionItem" EntityType="Self.t100CollectionItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t800Location" EntityType="Self.t800Location" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t810Theme" EntityType="Self.t810Theme" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_t100CollectionItem_t800Location" Association="Self.FK_t100CollectionItem_t800Location">
+      <End Role="t800Location" EntitySet="t800Location" />
+      <End Role="t100CollectionItem" EntitySet="t100CollectionItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t100CollectionItem_t810Theme" Association="Self.FK_t100CollectionItem_t810Theme">
+      <End Role="t810Theme" EntitySet="t810Theme" />
+      <End Role="t100CollectionItem" EntitySet="t100CollectionItem" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
