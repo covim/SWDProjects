@@ -1,0 +1,14 @@
+C:\SwDeveloper2022\SWDProjects\SWD.PlayCollector\Swd.PlayCollector.Model\bin\Debug\net6.0\Swd.PlayCollector.Model.deps.json
+C:\SwDeveloper2022\SWDProjects\SWD.PlayCollector\Swd.PlayCollector.Model\bin\Debug\net6.0\Swd.PlayCollector.Model.dll
+C:\SwDeveloper2022\SWDProjects\SWD.PlayCollector\Swd.PlayCollector.Model\bin\Debug\net6.0\Swd.PlayCollector.Model.pdb
+C:\SwDeveloper2022\SWDProjects\SWD.PlayCollector\Swd.PlayCollector.Model\obj\Debug\net6.0\Swd.PlayCollector.Model.csproj.AssemblyReference.cache
+C:\SwDeveloper2022\SWDProjects\SWD.PlayCollector\Swd.PlayCollector.Model\obj\Debug\net6.0\Swd.PlayCollector.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\SwDeveloper2022\SWDProjects\SWD.PlayCollector\Swd.PlayCollector.Model\obj\Debug\net6.0\Swd.PlayCollector.Model.AssemblyInfoInputs.cache
+C:\SwDeveloper2022\SWDProjects\SWD.PlayCollector\Swd.PlayCollector.Model\obj\Debug\net6.0\Swd.PlayCollector.Model.AssemblyInfo.cs
+C:\SwDeveloper2022\SWDProjects\SWD.PlayCollector\Swd.PlayCollector.Model\obj\Debug\net6.0\Swd.PlayCollector.Model.csproj.CoreCompileInputs.cache
+C:\SwDeveloper2022\SWDProjects\SWD.PlayCollector\Swd.PlayCollector.Model\obj\Debug\net6.0\Swd.PlayCollector.Model.dll
+C:\SwDeveloper2022\SWDProjects\SWD.PlayCollector\Swd.PlayCollector.Model\obj\Debug\net6.0\refint\Swd.PlayCollector.Model.dll
+C:\SwDeveloper2022\SWDProjects\SWD.PlayCollector\Swd.PlayCollector.Model\obj\Debug\net6.0\Swd.PlayCollector.Model.pdb
+C:\SwDeveloper2022\SWDProjects\SWD.PlayCollector\Swd.PlayCollector.Model\obj\Debug\net6.0\ref\Swd.PlayCollector.Model.dll
+C:\SwDeveloper2022\SWDProjects\SWD.PlayCollector\Swd.PlayCollector.Model\bin\Debug\net6.0\Swd.PlayCollector.Model.runtimeconfig.json
+C:\SwDeveloper2022\SWDProjects\SWD.PlayCollector\Swd.PlayCollector.Model\obj\Debug\net6.0\Swd.PlayCollector.Model.genruntimeconfig.cache
