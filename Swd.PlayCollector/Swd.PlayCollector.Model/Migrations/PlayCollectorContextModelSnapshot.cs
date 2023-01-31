@@ -22,7 +22,7 @@ namespace Swd.PlayCollector.Model.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Swd.PlayCollector.Model.CollectionItem", b =>
+            modelBuilder.Entity("Swd.PlayCollector.Model.LoactionItem", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -32,12 +32,13 @@ namespace Swd.PlayCollector.Model.Migrations
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("LocationId")
+                    b.Property<int?>("LocationId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -47,7 +48,6 @@ namespace Swd.PlayCollector.Model.Migrations
                         .HasComment("Name of collection item");
 
                     b.Property<string>("Number")
-                        .IsRequired()
                         .HasMaxLength(25)
                         .HasColumnType("nvarchar(25)")
                         .HasComment("Number of collection item");
@@ -58,17 +58,17 @@ namespace Swd.PlayCollector.Model.Migrations
                         .HasDefaultValue(0m)
                         .HasComment("Price of collection item");
 
-                    b.Property<int>("ReleaseYear")
+                    b.Property<int?>("ReleaseYear")
                         .HasColumnType("int");
 
-                    b.Property<int>("ThemeId")
+                    b.Property<int?>("ThemeId")
                         .HasColumnType("int");
 
                     b.Property<string>("UpdatedBy")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
-                    b.Property<DateTime>("UpdatedDate")
+                    b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -95,20 +95,22 @@ namespace Swd.PlayCollector.Model.Migrations
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Name")
+                    b.Property<string>("Name")
+                        .IsRequired()
                         .HasMaxLength(50)
-                        .HasColumnType("int");
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("UpdatedBy")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
-                    b.Property<DateTime>("UpdatedDate")
+                    b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -161,7 +163,8 @@ namespace Swd.PlayCollector.Model.Migrations
 
                     b.Property<string>("CreatedBy")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -171,10 +174,10 @@ namespace Swd.PlayCollector.Model.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("UpdatedBy")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
-                    b.Property<DateTime>("UpdatedDate")
+                    b.Property<DateTime?>("UpdatedDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -202,19 +205,15 @@ namespace Swd.PlayCollector.Model.Migrations
                     b.ToTable("TypeOfDocument");
                 });
 
-            modelBuilder.Entity("Swd.PlayCollector.Model.CollectionItem", b =>
+            modelBuilder.Entity("Swd.PlayCollector.Model.LoactionItem", b =>
                 {
                     b.HasOne("Swd.PlayCollector.Model.Location", "Location")
                         .WithMany("CollectionItems")
-                        .HasForeignKey("LocationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("LocationId");
 
                     b.HasOne("Swd.PlayCollector.Model.Theme", "Theme")
                         .WithMany("CollectionItems")
-                        .HasForeignKey("ThemeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ThemeId");
 
                     b.Navigation("Location");
 
@@ -223,7 +222,7 @@ namespace Swd.PlayCollector.Model.Migrations
 
             modelBuilder.Entity("Swd.PlayCollector.Model.Media", b =>
                 {
-                    b.HasOne("Swd.PlayCollector.Model.CollectionItem", "CollectionItem")
+                    b.HasOne("Swd.PlayCollector.Model.LoactionItem", "CollectionItem")
                         .WithMany("MediaSet")
                         .HasForeignKey("CollectionItemId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -240,7 +239,7 @@ namespace Swd.PlayCollector.Model.Migrations
                     b.Navigation("TypeOfDocument");
                 });
 
-            modelBuilder.Entity("Swd.PlayCollector.Model.CollectionItem", b =>
+            modelBuilder.Entity("Swd.PlayCollector.Model.LoactionItem", b =>
                 {
                     b.Navigation("MediaSet");
                 });

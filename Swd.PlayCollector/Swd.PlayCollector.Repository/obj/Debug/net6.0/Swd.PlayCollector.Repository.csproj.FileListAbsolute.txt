@@ -1,0 +1,15 @@
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\bin\Debug\net6.0\Swd.PlayCollector.Repository.deps.json
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\bin\Debug\net6.0\Swd.PlayCollector.Repository.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\bin\Debug\net6.0\Swd.PlayCollector.Repository.pdb
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\bin\Debug\net6.0\Swd.PlayCollector.Model.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\bin\Debug\net6.0\Swd.PlayCollector.Model.pdb
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\obj\Debug\net6.0\Swd.PlayCollector.Repository.csproj.AssemblyReference.cache
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\obj\Debug\net6.0\Swd.PlayCollector.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\obj\Debug\net6.0\Swd.PlayCollector.Repository.AssemblyInfoInputs.cache
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\obj\Debug\net6.0\Swd.PlayCollector.Repository.AssemblyInfo.cs
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\obj\Debug\net6.0\Swd.PlayCollector.Repository.csproj.CoreCompileInputs.cache
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\obj\Debug\net6.0\Swd.PlayCollector.Repository.csproj.CopyComplete
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\obj\Debug\net6.0\Swd.PlayCollector.Repository.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\obj\Debug\net6.0\refint\Swd.PlayCollector.Repository.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\obj\Debug\net6.0\Swd.PlayCollector.Repository.pdb
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\obj\Debug\net6.0\ref\Swd.PlayCollector.Repository.dll

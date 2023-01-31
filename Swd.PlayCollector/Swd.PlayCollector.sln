@@ -1,12 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swd.PlayCollector.Model", "Swd.PlayCollector.Model\Swd.PlayCollector.Model.csproj", "{F8CE6B3B-D898-4D35-B241-E35B4D23A139}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swd.PlayCollector.Model", "Swd.PlayCollector.Model\Swd.PlayCollector.Model.csproj", "{F8CE6B3B-D898-4D35-B241-E35B4D23A139}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swd.PlayCollector.Gui.Wpf", "Swd.PlayCollector.Gui.Wpf\Swd.PlayCollector.Gui.Wpf.csproj", "{77588A43-378F-47E5-98EC-E2EACB42ADCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swd.PlayCollector.Gui.Wpf", "Swd.PlayCollector.Gui.Wpf\Swd.PlayCollector.Gui.Wpf.csproj", "{77588A43-378F-47E5-98EC-E2EACB42ADCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swd.PlayCollector.Migrations", "Swd.PlayCollector.Migrations\Swd.PlayCollector.Migrations.csproj", "{3406C795-A1F1-4535-8610-30F747ADFD3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swd.PlayCollector.Migrations", "Swd.PlayCollector.Migrations\Swd.PlayCollector.Migrations.csproj", "{3406C795-A1F1-4535-8610-30F747ADFD3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swd.PlayCollector.Test", "Swd.PlayCollector.Test\Swd.PlayCollector.Test.csproj", "{BC405BA1-D624-4A88-9359-57483ED98BBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swd.PlayCollector.Test", "Swd.PlayCollector.Test\Swd.PlayCollector.Test.csproj", "{BC405BA1-D624-4A88-9359-57483ED98BBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swd.PlayCollector.Repository", "Swd.PlayCollector.Repository\Swd.PlayCollector.Repository.csproj", "{65A0EFFE-7350-4AFE-B60C-2E56733B3BB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +35,15 @@ Global
 		{BC405BA1-D624-4A88-9359-57483ED98BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC405BA1-D624-4A88-9359-57483ED98BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC405BA1-D624-4A88-9359-57483ED98BBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A0EFFE-7350-4AFE-B60C-2E56733B3BB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A0EFFE-7350-4AFE-B60C-2E56733B3BB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A0EFFE-7350-4AFE-B60C-2E56733B3BB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A0EFFE-7350-4AFE-B60C-2E56733B3BB3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {991A7AA8-0F8C-4316-BBFA-A47DAB78A114}
 	EndGlobalSection
 EndGlobal

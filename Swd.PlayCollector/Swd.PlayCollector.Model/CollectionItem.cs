@@ -14,12 +14,15 @@ public class CollectionItem : ModelBase
     [MaxLength(25)]
     public string Number { get; set; }
     
-    public int ReleaseYear { get; set; }
+    public int? ReleaseYear { get; set; }
 
     public decimal Price { get; set; }
 
+    public int ? LocationId { get; set; }
     public Location Location { get; set; }
-    
+
+    public int? ThemeId { get; set; }
     public Theme Theme { get; set; }
+
     public List<Media> MediaSet { get; set; }
 }
