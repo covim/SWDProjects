@@ -1,33 +1,40 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
-namespace Swd.PlayCollector.Model;
-
-public class PlayCollectorContext : DbContext
+namespace Swd.PlayCollector.Model
 {
-    public DbSet<CollectionItem> CollectionItem { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    public class PlayCollectorContext : DbContext
     {
-        base.OnConfiguring(optionsBuilder);
 
-        string connectionString = "data source=.;initial catalog=Swd.PlayCollector;integrated security=True;TrustServerCertificate=True;Trusted_Connection=True;";
-        
-        optionsBuilder.UseSqlServer(connectionString);
-    }
+        public DbSet<CollectionItem> CollectionItem { get; set; }
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        base.OnModelCreating(modelBuilder);
 
-        //fluent API
-        //modelBuilder.Entity<CollectionItem>(entity =>
-        //{
-        //    entity.HasKey(k => k.Id);
-        //    entity.Property(k => k.Name).IsRequired();
-        //});
 
-        modelBuilder.ApplyConfiguration(new CollectionItemConfig());
-        modelBuilder.ApplyConfiguration(new MediaConfig());
-        modelBuilder.ApplyConfiguration(new TypeOFDocumentConfig());
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            string connectionString = "data source=.;initial catalog=Swd.PlayCollector;integrated security=True;TrustServerCertificate=true;";
+            optionsBuilder.UseSqlServer(connectionString);
+
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            //modelBuilder.Entity<CollectionItem>(entity =>
+            //{
+            //    entity.HasKey(k => k.Id);
+            //    entity.Property(k => k.Name).IsRequired();
+            //});
+            modelBuilder.ApplyConfiguration(new CollectionItemConfig());
+            modelBuilder.ApplyConfiguration(new MediaConfig());
+            modelBuilder.ApplyConfiguration(new TypeOFDocumentConfig());
+
+        }
+
+
+
+
     }
 }
