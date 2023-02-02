@@ -1156,6 +1156,20 @@
           }
         }
       },
+      "Swd.PlayCollector.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Swd.PlayCollector.Model": "1.0.0",
+          "Swd.PlayCollector.Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Swd.PlayCollector.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Swd.PlayCollector.Business.dll": {}
+        }
+      },
       "Swd.PlayCollector.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1167,6 +1181,20 @@
         },
         "runtime": {
           "bin/placeholder/Swd.PlayCollector.Model.dll": {}
+        }
+      },
+      "Swd.PlayCollector.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.2",
+          "Swd.PlayCollector.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Swd.PlayCollector.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Swd.PlayCollector.Repository.dll": {}
         }
       }
     }
@@ -3514,16 +3542,27 @@
         "version.txt"
       ]
     },
+    "Swd.PlayCollector.Business/1.0.0": {
+      "type": "project",
+      "path": "../Swd.PlayCollector.Business/Swd.PlayCollector.Business.csproj",
+      "msbuildProject": "../Swd.PlayCollector.Business/Swd.PlayCollector.Business.csproj"
+    },
     "Swd.PlayCollector.Model/1.0.0": {
       "type": "project",
       "path": "../Swd.PlayCollector.Model/Swd.PlayCollector.Model.csproj",
       "msbuildProject": "../Swd.PlayCollector.Model/Swd.PlayCollector.Model.csproj"
+    },
+    "Swd.PlayCollector.Repository/1.0.0": {
+      "type": "project",
+      "path": "../Swd.PlayCollector.Repository/Swd.PlayCollector.Repository.csproj",
+      "msbuildProject": "../Swd.PlayCollector.Repository/Swd.PlayCollector.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.2",
+      "Swd.PlayCollector.Business >= 1.0.0",
       "Swd.PlayCollector.Model >= 1.0.0"
     ]
   },
@@ -3560,6 +3599,9 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
+            "C:\\SwDeveloper2022\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Business\\Swd.PlayCollector.Business.csproj": {
+              "projectPath": "C:\\SwDeveloper2022\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Business\\Swd.PlayCollector.Business.csproj"
+            },
             "C:\\SwDeveloper2022\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Model\\Swd.PlayCollector.Model.csproj": {
               "projectPath": "C:\\SwDeveloper2022\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Model\\Swd.PlayCollector.Model.csproj"
             }

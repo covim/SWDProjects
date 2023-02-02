@@ -65,3 +65,7 @@ C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\obj\D
 C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\obj\Debug\net6.0-windows\Swd.PlayCollector.Gui.Wpf.pdb
 C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\obj\Debug\net6.0-windows\Swd.PlayCollector.Gui.Wpf.genruntimeconfig.cache
 C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\obj\Debug\net6.0-windows\ref\Swd.PlayCollector.Gui.Wpf.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\Swd.PlayCollector.Business.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\Swd.PlayCollector.Repository.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\Swd.PlayCollector.Business.pdb
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\Swd.PlayCollector.Repository.pdb
