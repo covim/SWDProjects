@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Swd.PlayCollector.Business;
+using Swd.PlayCollector.Gui.Wpf.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,14 +25,22 @@ namespace Swd.PlayCollector.Gui.Wpf
     {
         public MainWindow()
         {
+
             InitializeComponent();
+            this.DataContext = new MainWindowViewModel();   
         }
 
         private async void btnLoadData_Click(object sender, RoutedEventArgs e)
         {
-            CollectionItemService service = new CollectionItemService();
-            this.grdCollectionItems.ItemsSource = await service.GetAllAsync().Result.ToListAsync();
-            
+            //CollectionItemService service = new CollectionItemService();
+            ////this.grdCollectionItems.ItemsSource = await service.GetAllAsync().Result.ToListAsync();
+            //this.grdSfCollectionItems.ItemsSource = await service.GetAllAsync().Result.ToListAsync();
+
+
+        }
+
+        private void txbSearchValue_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
         }
     }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "f5SgmFkROARsWjEFPNrnbcUdonC00JKKHvYHouTm+xu1Cr10Rs7Gnrw8Zt67uZZ3dgdSFVs20mP+q/e4gIdKZg==",
+  "dgSpecHash": "rtQv5PWQBZY5fZff2sO5cfrvZeQ5YTQ0laNm4jhFBP6CsfrUS4SMGFOMcyrmbIN38bbWXghCFB7rPvCGFrfE+Q==",
   "success": true,
   "projectFilePath": "C:\\SwDeveloper2022\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Gui.Wpf\\Swd.PlayCollector.Gui.Wpf.csproj",
   "expectedPackageFiles": [
@@ -42,6 +42,10 @@
     "C:\\Users\\User\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\syncfusion.data.wpf\\20.4.0.48\\syncfusion.data.wpf.20.4.0.48.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\syncfusion.licensing\\20.4.0.48\\syncfusion.licensing.20.4.0.48.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\syncfusion.sfgrid.wpf\\20.4.0.48\\syncfusion.sfgrid.wpf.20.4.0.48.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\syncfusion.shared.wpf\\20.4.0.48\\syncfusion.shared.wpf.20.4.0.48.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",

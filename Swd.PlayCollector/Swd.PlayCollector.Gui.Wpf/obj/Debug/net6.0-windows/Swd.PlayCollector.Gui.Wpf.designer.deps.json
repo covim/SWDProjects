@@ -452,6 +452,46 @@
           }
         }
       },
+      "Syncfusion.Data.WPF/20.4.0.48": {
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Data.WPF.dll": {
+            "assemblyVersion": "20.4600.0.48",
+            "fileVersion": "20.4600.0.48"
+          }
+        }
+      },
+      "Syncfusion.Licensing/20.4.0.48": {
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "20.4600.0.48",
+            "fileVersion": "20.4600.0.48"
+          }
+        }
+      },
+      "Syncfusion.SfGrid.WPF/20.4.0.48": {
+        "dependencies": {
+          "Syncfusion.Data.WPF": "20.4.0.48",
+          "Syncfusion.Licensing": "20.4.0.48",
+          "Syncfusion.Shared.WPF": "20.4.0.48"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.SfGrid.WPF.dll": {
+            "assemblyVersion": "20.4600.0.48",
+            "fileVersion": "20.4600.0.48"
+          }
+        }
+      },
+      "Syncfusion.Shared.WPF/20.4.0.48": {
+        "dependencies": {
+          "Syncfusion.Licensing": "20.4.0.48"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.dll": {
+            "assemblyVersion": "20.4600.0.48",
+            "fileVersion": "20.4600.0.48"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {},
       "System.CodeDom/4.4.0": {
         "runtime": {
@@ -1055,6 +1095,34 @@
       "sha512": "sha512-KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ==",
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
+    },
+    "Syncfusion.Data.WPF/20.4.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2PNcDqhdJpZKw0KF32yc/5JcYM2MaA1bbY0iThmoP/6z9QHIuirFCC3xngYSUu+ltlCYMbyfyXinxUkFce8ZOg==",
+      "path": "syncfusion.data.wpf/20.4.0.48",
+      "hashPath": "syncfusion.data.wpf.20.4.0.48.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/20.4.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-o9VL4Aeyf7SWgEB0wLxYWLnRCfPZ7AWivdfyV73hZSdSy57nHPoMOQFx8O9rA7vbtM35fWwGhxcfpind3puwAA==",
+      "path": "syncfusion.licensing/20.4.0.48",
+      "hashPath": "syncfusion.licensing.20.4.0.48.nupkg.sha512"
+    },
+    "Syncfusion.SfGrid.WPF/20.4.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3O0Hf9obK504Oac7LRMMTvb5RPhmbi1p3gYtKWxYtNKSzjMIa9kH/XY0+Gvmy80ydvQnzrVmcXd/JhAJ3UgPjg==",
+      "path": "syncfusion.sfgrid.wpf/20.4.0.48",
+      "hashPath": "syncfusion.sfgrid.wpf.20.4.0.48.nupkg.sha512"
+    },
+    "Syncfusion.Shared.WPF/20.4.0.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NCxQdMnhWNBj8pqHcHQ7qn+pjiL+c/QKEQmQ4miAswLRyWGHc9btO2/1yivnYXegpmPsyXClene915MxmHUSpA==",
+      "path": "syncfusion.shared.wpf/20.4.0.48",
+      "hashPath": "syncfusion.shared.wpf.20.4.0.48.nupkg.sha512"
     },
     "System.Buffers/4.5.1": {
       "type": "package",
