@@ -20,9 +20,6 @@ namespace Swd.PlayCollector.Gui.Wpf.ViewModel
             set { _serchCriteriaHelpText = value; }
         }
 
-
-
-
         public string SearchCriteria
         {
             get { return _searchCriteria; }

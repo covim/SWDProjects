@@ -13,5 +13,10 @@ namespace Swd.PlayCollector.Gui.Wpf
     /// </summary>
     public partial class App : Application
     {
+        public App()
+        {
+            //Register Syncfusion license
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MTA5MTk1NkAzMjMwMmUzNDJlMzBHME12Sy85RTJuSTFqdEJhYUNXNXBJWGZaeE43ZmpBYUM1ZUowVkllOUZNPQ=="); 
+        }
     }
 }

@@ -666,7 +666,7 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
-      "Syncfusion.Data.WPF/20.4.0.48": {
+      "Syncfusion.Data.WPF/20.4.0.49": {
         "type": "package",
         "compile": {
           "lib/net6.0-windows7.0/Syncfusion.Data.WPF.dll": {
@@ -679,7 +679,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.4.0.48": {
+      "Syncfusion.Licensing/20.4.0.49": {
         "type": "package",
         "compile": {
           "lib/net6.0-windows7.0/Syncfusion.Licensing.dll": {}
@@ -688,12 +688,12 @@
           "lib/net6.0-windows7.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.SfGrid.WPF/20.4.0.48": {
+      "Syncfusion.SfGrid.WPF/20.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Data.WPF": "20.4.0.48",
-          "Syncfusion.Licensing": "20.4.0.48",
-          "Syncfusion.Shared.WPF": "20.4.0.48"
+          "Syncfusion.Data.WPF": "20.4.0.49",
+          "Syncfusion.Licensing": "20.4.0.49",
+          "Syncfusion.Shared.WPF": "20.4.0.49"
         },
         "compile": {
           "lib/net6.0-windows7.0/Syncfusion.SfGrid.WPF.dll": {
@@ -706,10 +706,10 @@
           }
         }
       },
-      "Syncfusion.Shared.WPF/20.4.0.48": {
+      "Syncfusion.Shared.WPF/20.4.0.49": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "20.4.0.48"
+          "Syncfusion.Licensing": "20.4.0.49"
         },
         "compile": {
           "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.dll": {
@@ -2226,10 +2226,10 @@
         "mono.texttemplating.nuspec"
       ]
     },
-    "Syncfusion.Data.WPF/20.4.0.48": {
-      "sha512": "2PNcDqhdJpZKw0KF32yc/5JcYM2MaA1bbY0iThmoP/6z9QHIuirFCC3xngYSUu+ltlCYMbyfyXinxUkFce8ZOg==",
+    "Syncfusion.Data.WPF/20.4.0.49": {
+      "sha512": "nT/md3HIxZVOffvu1a50j7HD97I9Uj0Jxd5GJk4kIWTDNejeiufnm5NXAEWL+d3dRWH/GWd2XTD5lAVnYAlj1w==",
       "type": "package",
-      "path": "syncfusion.data.wpf/20.4.0.48",
+      "path": "syncfusion.data.wpf/20.4.0.49",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2244,15 +2244,15 @@
         "lib/net46/Syncfusion.Data.WPF.xml",
         "lib/net6.0-windows7.0/Syncfusion.Data.WPF.dll",
         "lib/net6.0-windows7.0/Syncfusion.Data.WPF.xml",
-        "syncfusion.data.wpf.20.4.0.48.nupkg.sha512",
+        "syncfusion.data.wpf.20.4.0.49.nupkg.sha512",
         "syncfusion.data.wpf.nuspec",
         "syncfusion_logo.png"
       ]
     },
-    "Syncfusion.Licensing/20.4.0.48": {
-      "sha512": "o9VL4Aeyf7SWgEB0wLxYWLnRCfPZ7AWivdfyV73hZSdSy57nHPoMOQFx8O9rA7vbtM35fWwGhxcfpind3puwAA==",
+    "Syncfusion.Licensing/20.4.0.49": {
+      "sha512": "JsufJL+jiq4z8tIUv9ad97Ej/5yiWykRw4HyCOtQqrJioZrR4SQoxYfcO7V7p5rt6w7qGssTivAS6M4Dp2AMDQ==",
       "type": "package",
-      "path": "syncfusion.licensing/20.4.0.48",
+      "path": "syncfusion.licensing/20.4.0.49",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2278,15 +2278,15 @@
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.20.4.0.48.nupkg.sha512",
+        "syncfusion.licensing.20.4.0.49.nupkg.sha512",
         "syncfusion.licensing.nuspec",
         "syncfusion_logo.png"
       ]
     },
-    "Syncfusion.SfGrid.WPF/20.4.0.48": {
-      "sha512": "3O0Hf9obK504Oac7LRMMTvb5RPhmbi1p3gYtKWxYtNKSzjMIa9kH/XY0+Gvmy80ydvQnzrVmcXd/JhAJ3UgPjg==",
+    "Syncfusion.SfGrid.WPF/20.4.0.49": {
+      "sha512": "wGwN+XLPBJzlSMI0+r8L+7PySQnykwaHE1xF5svriFM+DWJhEVjwjmTCzkJvmrWCMPmzSTCDiER1Hf6NdvFu8A==",
       "type": "package",
-      "path": "syncfusion.sfgrid.wpf/20.4.0.48",
+      "path": "syncfusion.sfgrid.wpf/20.4.0.49",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -2316,16 +2316,16 @@
         "lib/net6.0-windows7.0/Design/Syncfusion.SfGrid.WPF.DesignTools.dll",
         "lib/net6.0-windows7.0/Syncfusion.SfGrid.WPF.dll",
         "lib/net6.0-windows7.0/Syncfusion.SfGrid.WPF.xml",
-        "syncfusion.sfgrid.wpf.20.4.0.48.nupkg.sha512",
+        "syncfusion.sfgrid.wpf.20.4.0.49.nupkg.sha512",
         "syncfusion.sfgrid.wpf.nuspec",
         "syncfusion_logo.png",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "Syncfusion.Shared.WPF/20.4.0.48": {
-      "sha512": "NCxQdMnhWNBj8pqHcHQ7qn+pjiL+c/QKEQmQ4miAswLRyWGHc9btO2/1yivnYXegpmPsyXClene915MxmHUSpA==",
+    "Syncfusion.Shared.WPF/20.4.0.49": {
+      "sha512": "DNQgoHzdJ1+ZahLDGMMiJi5tJiL79lCjr6O9uEAAIVlMoUI+VHiUmwDpGOB93NzZTHTcDDws/T5C+5u2TfrUDQ==",
       "type": "package",
-      "path": "syncfusion.shared.wpf/20.4.0.48",
+      "path": "syncfusion.shared.wpf/20.4.0.49",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -2370,7 +2370,7 @@
         "lib/net6.0-windows7.0/Design/Syncfusion.Shared.WPF.DesignTools.dll",
         "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.dll",
         "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.xml",
-        "syncfusion.shared.wpf.20.4.0.48.nupkg.sha512",
+        "syncfusion.shared.wpf.20.4.0.49.nupkg.sha512",
         "syncfusion.shared.wpf.nuspec",
         "syncfusion_logo.png",
         "tools/VisualStudioToolsManifest.xml"
@@ -3770,8 +3770,8 @@
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.2",
       "Swd.PlayCollector.Business >= 1.0.0",
       "Swd.PlayCollector.Model >= 1.0.0",
-      "Syncfusion.Licensing >= 20.4.0.48",
-      "Syncfusion.SfGrid.WPF >= 20.4.0.48"
+      "Syncfusion.Licensing >= 20.4.0.49",
+      "Syncfusion.SfGrid.WPF >= 20.4.0.49"
     ]
   },
   "packageFolders": {
@@ -3841,11 +3841,11 @@
           },
           "Syncfusion.Licensing": {
             "target": "Package",
-            "version": "[20.4.0.48, )"
+            "version": "[20.4.0.49, )"
           },
           "Syncfusion.SfGrid.WPF": {
             "target": "Package",
-            "version": "[20.4.0.48, )"
+            "version": "[20.4.0.49, )"
           }
         },
         "imports": [

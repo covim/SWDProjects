@@ -135,11 +135,11 @@
             },
             "Syncfusion.Licensing": {
               "target": "Package",
-              "version": "[20.4.0.48, )"
+              "version": "[20.4.0.49, )"
             },
             "Syncfusion.SfGrid.WPF": {
               "target": "Package",
-              "version": "[20.4.0.48, )"
+              "version": "[20.4.0.49, )"
             }
           },
           "imports": [
