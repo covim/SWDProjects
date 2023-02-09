@@ -8,6 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Update="fCollectionBinding.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="fTemplates.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Resources\playing-cards.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

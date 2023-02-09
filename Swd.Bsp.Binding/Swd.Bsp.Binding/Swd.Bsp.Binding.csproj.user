@@ -18,6 +18,12 @@
     <Page Update="fBasicBinding.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="fCollectionBinding.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="fTemplates.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="fObjectBinding.xaml">
       <SubType>Designer</SubType>
     </Page>

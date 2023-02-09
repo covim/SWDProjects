@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\App.xaml
-3-1004922692
+5-496064972
 
-8-1027594130
+101582323214
 194237474483
-fBasicBinding.xaml;fObjectBinding.xaml;MainWindow.xaml;
+fBasicBinding.xaml;fCollectionBinding.xaml;fObjectBinding.xaml;fTemplates.xaml;MainWindow.xaml;
 
 True
 

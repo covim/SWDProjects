@@ -58,5 +58,30 @@ namespace Swd.Bsp.Binding
 
             this.Hide();
         }
+
+        private void btnListBinding_Click(object sender, RoutedEventArgs e)
+        {
+            fCollectionBinding f = new fCollectionBinding(this);
+            f.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            f.Width = 1200;
+            f.Height = 900;
+            f.Show();
+
+
+            //this.Hide();
+
+        }
+
+        private void btnTemplate_Click(object sender, RoutedEventArgs e)
+        {
+            fTemplates f = new fTemplates(this);
+            f.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            f.Width = 1200;
+            f.Height = 900;
+            f.Show();
+
+
+            //this.Hide();
+        }
     }
 }

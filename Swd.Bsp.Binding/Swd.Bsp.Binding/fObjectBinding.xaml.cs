@@ -34,7 +34,7 @@ namespace Swd.Bsp.Binding
 
         public fObjectBinding(Window callerWindow) : this()
         {
-            _callerWindow = CallerWindow;
+            _callerWindow = callerWindow;
         }
 
         private void btnGetCustomer_Click(object sender, RoutedEventArgs e)
