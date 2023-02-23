@@ -11,6 +11,9 @@
     <Compile Update="fCollectionBinding.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="fForecast.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="fTemplates.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

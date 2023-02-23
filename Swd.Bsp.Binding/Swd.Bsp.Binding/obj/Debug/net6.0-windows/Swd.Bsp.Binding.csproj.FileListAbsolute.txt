@@ -28,3 +28,5 @@ C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\obj\Debug\net6.0-
 C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\obj\Debug\net6.0-windows\fCollectionBinding.baml
 C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\obj\Debug\net6.0-windows\fTemplates.g.cs
 C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\obj\Debug\net6.0-windows\fTemplates.baml
+C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\obj\Debug\net6.0-windows\fForecast.g.cs
+C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\obj\Debug\net6.0-windows\fForecast.baml
