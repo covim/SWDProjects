@@ -72,22 +72,10 @@ namespace Swd.Bsp.Binding
 
         private void btnShowForecast_Click(object sender, RoutedEventArgs e)
         {
-            List<Forecast> forecasts = new List<Forecast>();
-            int daysForForecast = (int)this.cbxDays.SelectedItem;
-            Random random = new Random();
+           
+            int daysForForecast = (int)this.cbxDays.SelectedItem;          
 
-            for (int i = 0; i < daysForForecast; i++)
-            {
-                Forecast forecast = new Forecast
-                {
-                    GeneralForecast = (GeneralForecast)random.Next(Enum.GetValues(typeof(GeneralForecast)).Length),
-                    TemperatureLow = 0,
-                    TemperatureHigh = 20,
-                };
-                forecasts.Add(forecast);
-            }
-
-            this.lstForecast.DataContext = forecasts;
+            this.lstForecast.DataContext = GetForcastList(daysForForecast);
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -109,8 +97,25 @@ namespace Swd.Bsp.Binding
             //}
             //this.cbxDays.ItemsSource = days;
 
+        }
 
+        private List<Forecast> GetForcastList(int forcastDaysCount)
+        {
+            List<Forecast> forecasts = new List<Forecast>();
+            Random random = new Random();
 
+            for (int i = 0; i < forcastDaysCount; i++)
+            {
+                Forecast forecast = new Forecast
+                {
+                    GeneralForecast = (GeneralForecast)random.Next(Enum.GetValues(typeof(GeneralForecast)).Length),
+                    //TemperatureLow = 0,
+                    //TemperatureHigh = 20,
+                };
+                forecasts.Add(forecast);
+            }
+
+            return forecasts;
 
         }
     }

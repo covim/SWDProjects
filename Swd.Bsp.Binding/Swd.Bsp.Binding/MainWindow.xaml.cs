@@ -43,7 +43,7 @@ namespace Swd.Bsp.Binding
             f.Show();
 
 
-            this.Hide();
+           // this.Hide();
 
         }
 
@@ -56,7 +56,7 @@ namespace Swd.Bsp.Binding
             f.Show();
 
 
-            this.Hide();
+          //  this.Hide();
         }
 
         private void btnListBinding_Click(object sender, RoutedEventArgs e)

@@ -7,6 +7,50 @@
         mc:Ignorable="d"
         Title="fForecast" Height="450" Width="800" Loaded="Window_Loaded">
 
+    <Window.Resources>
+
+        <DataTemplate x:Key="weatherTemplate">
+
+            <Border BorderBrush="Blue" BorderThickness="3" Margin="3">
+                <DockPanel>
+                    <StackPanel Margin="5" Orientation="Horizontal" Width="300" VerticalAlignment="Center">
+                        <TextBlock Margin="5" 
+                                   VerticalAlignment="Center" 
+                                   Foreground="DarkSlateGray" 
+                                   FontWeight="DemiBold" 
+                                   FontSize="15" 
+                                   TextAlignment="center" 
+                                   Width="70"
+                                   Text="{Binding GeneralForecast}"/>
+                        <TextBlock Margin="5" 
+                                   VerticalAlignment="Center" 
+                                   Foreground="Blue" 
+                                   FontSize="12" 
+                                   TextAlignment="Center" 
+                                   Text="{Binding TemperatureLow, StringFormat=min. {0:F2} °C}"/>
+                        <TextBlock Margin="1" 
+                                   VerticalAlignment="Center" 
+                                   Foreground="Black" 
+                                   FontSize="12" 
+                                   TextAlignment="Center" 
+                                   Text="/"/>
+                        <TextBlock Margin="5" 
+                                   VerticalAlignment="Center" 
+                                   Foreground="Red" 
+                                   FontSize="12" 
+                                   TextAlignment="Center" 
+                                   Text="{Binding TemperatureHigh, StringFormat=max. {0:F2} °C}"/>
+                    </StackPanel>
+                </DockPanel>
+            </Border>
+
+        </DataTemplate>
+
+
+    </Window.Resources>
+
+
+
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
@@ -55,12 +99,14 @@
                          VerticalAlignment="Center" 
                          FontSize="15"/>
         </StackPanel>
-        
+
         <ListBox Grid.Row="2"
+                 ItemTemplate="{DynamicResource weatherTemplate}"
                  x:Name="lstForecast"
-                 ItemsSource="{Binding}">
-        
-        </ListBox>
+                 ItemsSource="{Binding}"
+                 />
+
+
     </Grid>
 
 
