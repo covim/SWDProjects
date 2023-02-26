@@ -8,7 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="syncfusion.ui.wpf.net" Version="20.4.0.38" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="fCollectionBinding.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="fForecastSyncFus.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="fForecast.xaml.cs">

@@ -21,6 +21,9 @@
     <Page Update="fCollectionBinding.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="fForecastSyncFus.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="fForecast.xaml">
       <SubType>Designer</SubType>
     </Page>

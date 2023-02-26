@@ -14,4 +14,7 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
     <SourceRoot Include="C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\20.4.0.38\ToolboxNuGetPackages\" />
   </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgSyncfusion_UI_WPF_NET Condition=" '$(PkgSyncfusion_UI_WPF_NET)' == '' ">C:\Program Files (x86)\Syncfusion\Essential Studio\WPF\20.4.0.38\ToolboxNuGetPackages\syncfusion.ui.wpf.net\20.4.0.38</PkgSyncfusion_UI_WPF_NET>
+  </PropertyGroup>
 </Project>

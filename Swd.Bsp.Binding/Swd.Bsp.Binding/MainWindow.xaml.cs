@@ -91,6 +91,11 @@ namespace Swd.Bsp.Binding
             f.Width = 1200;
             f.Height = 900;
             f.Show();
+            fForecastSyncFus g = new fForecastSyncFus(this);
+            g.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            g.Width = 1200;
+            g.Height = 900;
+            g.Show();
         }
     }
 }

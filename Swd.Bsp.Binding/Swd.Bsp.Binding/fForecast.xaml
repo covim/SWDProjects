@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Swd.Bsp.Binding"
         mc:Ignorable="d"
+
         Title="fForecast" Height="450" Width="800" Loaded="Window_Loaded">
 
     <Window.Resources>
@@ -13,7 +14,7 @@
 
             <Border BorderBrush="Blue" BorderThickness="3" Margin="3">
                 <DockPanel>
-                    <StackPanel Margin="5" Orientation="Horizontal" Width="300" VerticalAlignment="Center">
+                    <StackPanel Margin="5" Orientation="Horizontal" Width="280" VerticalAlignment="Center">
                         <TextBlock Margin="5" 
                                    VerticalAlignment="Center" 
                                    Foreground="DarkSlateGray" 
@@ -27,7 +28,7 @@
                                    Foreground="Blue" 
                                    FontSize="12" 
                                    TextAlignment="Center" 
-                                   Text="{Binding TemperatureLow, StringFormat=min. {0:F2} °C}"/>
+                                   Text="{Binding TemperatureLow, StringFormat=min. {0:F1} °C}"/>
                         <TextBlock Margin="1" 
                                    VerticalAlignment="Center" 
                                    Foreground="Black" 
@@ -39,7 +40,8 @@
                                    Foreground="Red" 
                                    FontSize="12" 
                                    TextAlignment="Center" 
-                                   Text="{Binding TemperatureHigh, StringFormat=max. {0:F2} °C}"/>
+                                   Text="{Binding TemperatureHigh, StringFormat=max. {0:F1} °C}"/>
+                        
                     </StackPanel>
                 </DockPanel>
             </Border>
