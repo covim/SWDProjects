@@ -28,10 +28,6 @@ C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\obj\Debug\net6.0-
 C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\obj\Debug\net6.0-windows\fCollectionBinding.baml
 C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\obj\Debug\net6.0-windows\fTemplates.g.cs
 C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\obj\Debug\net6.0-windows\fTemplates.baml
-C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\obj\Debug\net6.0-windows\fForecast.g.cs
-C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\obj\Debug\net6.0-windows\fForecast.baml
-C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\obj\Debug\net6.0-windows\fForecastSyncFus.g.cs
-C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\obj\Debug\net6.0-windows\fForecastSyncFus.baml
 C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\bin\Debug\net6.0-windows\Syncfusion.Calculate.Base.dll
 C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\bin\Debug\net6.0-windows\Syncfusion.Compression.Base.dll
 C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\bin\Debug\net6.0-windows\Syncfusion.Data.WPF.dll
@@ -125,3 +121,8 @@ C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\bin\Debug\net6.0-
 C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\bin\Debug\net6.0-windows\Syncfusion.Tools.WPF.dll
 C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\bin\Debug\net6.0-windows\Syncfusion.XlsIO.Base.dll
 C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\obj\Debug\net6.0-windows\Swd.Bsp.Binding.csproj.CopyComplete
+C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\obj\Debug\net6.0-windows\View\fForecast.g.cs
+C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\obj\Debug\net6.0-windows\View\fForecast.baml
+C:\SwDeveloper2022\SWDProjects\Swd.Bsp.Binding\Swd.Bsp.Binding\bin\Debug\net6.0-windows\CommunityToolkit.Mvvm.dll

@@ -8,6 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
     <PackageReference Include="syncfusion.ui.wpf.net" Version="20.4.0.38" />
   </ItemGroup>
 
@@ -15,10 +17,7 @@
     <Compile Update="fCollectionBinding.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="fForecastSyncFus.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="fForecast.xaml.cs">
+    <Compile Update="View\fForecast.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="fTemplates.xaml.cs">

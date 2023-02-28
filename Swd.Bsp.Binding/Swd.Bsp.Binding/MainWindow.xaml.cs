@@ -86,16 +86,12 @@ namespace Swd.Bsp.Binding
 
         private void btnWeatherforcast_Click(object sender, RoutedEventArgs e)
         {
-            fForecast f = new fForecast(this);
+            View.fForecast f = new View.fForecast(this);
             f.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             f.Width = 1200;
             f.Height = 900;
             f.Show();
-            fForecastSyncFus g = new fForecastSyncFus(this);
-            g.WindowStartupLocation = WindowStartupLocation.CenterScreen;
-            g.Width = 1200;
-            g.Height = 900;
-            g.Show();
+            
         }
     }
 }
