@@ -15,15 +15,56 @@ namespace Swd.Bsp.Binding.ViewModel
     public class fForecastViewModel : ObservableObject
 
     {
+        // siehe CommunityToolkit 
 
         //Fields
         private int _minDaysForForecast = 1;
         private int _maxDaysForForecast = 10;
+        private bool _isDegree;
+        private List<Forecast> _forecastList = new List<Forecast>();
+        private List<int> _daysForForecast;
+        private int _selectedDays;
+
+
+
 
         //Properties
-        public bool IsDegree { get; set; }
-        public List<int> DaysForForecast { get; set; }
-        public List<Forecast> ForecastList { get; set; }
+
+        public int SelectedDays
+        {
+            get { return _selectedDays; }
+            set
+            {
+                SetProperty(ref _selectedDays, value);
+                GetForecast();
+
+            }
+        }
+
+        public bool IsDegree
+        {
+            get { return _isDegree; }
+            set
+            {
+                SetProperty(ref _isDegree, value);
+            }
+        }
+        public List<int> DaysForForecast
+        {
+            get { return _daysForForecast; }
+            set
+            {
+                SetProperty(ref _daysForForecast, value);
+            }
+        }
+        public List<Forecast> ForecastList
+        {
+            get { return _forecastList; }
+            set
+            {
+                SetProperty(ref _forecastList, value);
+            }
+        }
 
         //Commands
         public ICommand ShowForecastCommand { get; }
@@ -33,9 +74,11 @@ namespace Swd.Bsp.Binding.ViewModel
 
         public fForecastViewModel()
         {
-            this.IsDegree= true;
+            this.IsDegree = true;
+            this._selectedDays = 5;
 
             CloseCommand = new RelayCommand(CloseView);
+            ShowForecastCommand = new RelayCommand(ShowForecast);
             DaysForForecast = BuildDaysForForecastList(_minDaysForForecast, _maxDaysForForecast);
         }
 
@@ -45,17 +88,22 @@ namespace Swd.Bsp.Binding.ViewModel
             MessageBox.Show("Close");
         }
 
+        private void ShowForecast()
+        {
+            GetForecast();
+        }
+
         private List<int> BuildDaysForForecastList(int _minDaysForForecast, int _maxDaysForForecast)
         {
-            return Enumerable.Range(_minDaysForForecast,_maxDaysForForecast).ToList();
+            return Enumerable.Range(_minDaysForForecast, _maxDaysForForecast).ToList();
         }
 
         private void GetForecast()
         {
-            
-            List<Forecast> forecasts= new List<Forecast>(); 
+
+            List<Forecast> forecasts = new List<Forecast>();
             //int daysForForecast = (int)this.cbxDays.SelectedItem;
-            int daysForForecast = 5;
+            int daysForForecast = SelectedDays;
 
             Random random = new Random();
 

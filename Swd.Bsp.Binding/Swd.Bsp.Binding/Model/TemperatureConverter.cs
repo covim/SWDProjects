@@ -12,10 +12,7 @@ using System.Windows.Media;
 namespace Swd.Bsp.Binding.Model
 {
     public class TemperatureConverter : IMultiValueConverter
-
     {
-
-
         public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
         {
             bool isDegree = System.Convert.ToBoolean(values[1]);

@@ -34,7 +34,7 @@
                       VerticalAlignment="Center" 
                       Margin="4"
                       ItemsSource="{Binding DaysForForecast}"
-                      SelectedIndex="4"/>
+                      SelectedValue="{Binding SelectedDays}"/>
 
             <Button Content="Show forecast..." 
                     x:Name="btnShowForecast" 
@@ -42,7 +42,7 @@
                     VerticalAlignment="Center" 
                     FontSize="15" 
                     Margin="4"
-                    Command="{Binding CloseCommand}"/>
+                    Command="{Binding ShowForecastCommand}"/>
 
             <Button Content="Load realtime data..." 
                     x:Name="btnLoadRealtimeData" 
@@ -78,16 +78,13 @@
                     <Border BorderBrush="Black" Padding="4" BorderThickness="2" Background="{Binding Converter={StaticResource gf2brush}}">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="{Binding GeneralForecast}" FontSize="20" FontWeight="Bold"/>
-                            <!--<TextBlock Text="{Binding TemperatureLow, StringFormat='Low: \{0:N2\}' }" FontSize="16" Margin="10,0,0,0" VerticalAlignment="Bottom"/>
-                            <TextBlock Text="{Binding TemperatureHigh,  StringFormat='High: \{0:N2\}' }" FontSize="16"  Margin="10,0,0,0"  VerticalAlignment="Bottom"/>-->
-
                             <TextBlock FontSize="16" 
                                        Margin="10,0,0,0" 
                                        VerticalAlignment="Bottom">
                                 <TextBlock.Text>
                                     <MultiBinding StringFormat="Low: {0:N2}" Converter="{StaticResource TempConverter}">
                                         <Binding Path="TemperatureLow" />
-                                        <Binding Path="IsDegree" RelativeSource="{RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}"/>
+                                        <Binding Path="DataContext.IsDegree" RelativeSource="{RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}"/>
                                     </MultiBinding>
                                 </TextBlock.Text>
                             </TextBlock>
@@ -98,7 +95,7 @@
                                 <TextBlock.Text>
                                     <MultiBinding StringFormat="High: {0:N2}" Converter="{StaticResource TempConverter}">
                                         <Binding Path="TemperatureHigh" />
-                                        <Binding Path="IsDegree" RelativeSource="{RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}"/>
+                                        <Binding Path="DataContext.IsDegree" RelativeSource="{RelativeSource Mode=FindAncestor, AncestorType={x:Type Window}}"/>
                                     </MultiBinding>
                                 </TextBlock.Text>
                             </TextBlock>
