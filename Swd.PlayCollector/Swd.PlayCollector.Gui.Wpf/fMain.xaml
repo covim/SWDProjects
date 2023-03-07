@@ -1,35 +1,87 @@
-﻿<Window x:Class="Swd.PlayCollector.Gui.Wpf.fMain"
+﻿<RibbonWindow x:Class="Swd.PlayCollector.Gui.Wpf.fMain"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Swd.PlayCollector.Gui.Wpf"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
         Title="fMain" Height="450" Width="800"
         WindowStartupLocation="CenterScreen"
-        ResizeMode="CanResizeWithGrip">
+        ResizeMode="CanResizeWithGrip"
+        Background="{StaticResource ResourceKey=PlaymoColor}">
     <Grid >
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="25*"/>
             <ColumnDefinition Width="75*"/>
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="35"/>
-        </Grid.RowDefinitions>
 
         <Ribbon Grid.Row="0" Grid.ColumnSpan="2">
-            
+            <Ribbon.ApplicationMenu>
+                <RibbonApplicationMenu>
+                    <RibbonApplicationMenuItem Header="Import"/>
+                    <RibbonApplicationMenuItem Header="Export"/>
+                    <RibbonApplicationSplitMenuItem/>
+                    <RibbonApplicationMenuItem Header="Print"/>
+                    <RibbonApplicationSplitMenuItem/>
+                    <RibbonApplicationMenuItem Header="Setting"/>
+                    <RibbonApplicationSplitMenuItem/>
+                    <RibbonApplicationMenuItem Header="Close"/>
+                </RibbonApplicationMenu>
+            </Ribbon.ApplicationMenu>
+
+            <RibbonTab Header="Start">
+                <RibbonGroup x:Name="grpCollectionItem" Header="Collection item" >
+                    <RibbonButton Label="New" LargeImageSource="pack://siteoforigin:,,,/Resources/plus.png"/>
+                    <RibbonButton Label="Delete" LargeImageSource="pack://siteoforigin:,,,/Resources/plus.png"/>
+                    <RibbonButton Label="Save" LargeImageSource="pack://siteoforigin:,,,/Resources/plus.png"/>
+                    <RibbonButton Label="Cancel" LargeImageSource="pack://siteoforigin:,,,/Resources/plus.png"/>
+                </RibbonGroup>
+
+                <RibbonGroup x:Name="grpMediaItems" Header="Insert">
+                    <RibbonButton Label="Image" LargeImageSource="pack://siteoforigin:,,,/Resources/plus.png"/>
+                    <RibbonButton Label="Document" LargeImageSource="pack://siteoforigin:,,,/Resources/plus.png"/>
+                    <RibbonButton Label="Link" LargeImageSource="pack://siteoforigin:,,,/Resources/plus.png"/>
+                </RibbonGroup>
+            </RibbonTab>
+
+            <RibbonTab Header="Lists">
+                <RibbonGroup x:Name="grpLocation" Header="Location">
+                    <RibbonButton Label="New" LargeImageSource="pack://siteoforigin:,,,/Resources/plus.png"/>
+                    <RibbonButton Label="Delete" LargeImageSource="pack://siteoforigin:,,,/Resources/plus.png"/>
+                    <RibbonButton Label="Save" LargeImageSource="pack://siteoforigin:,,,/Resources/plus.png"/>
+                    <RibbonButton Label="Cancel" LargeImageSource="pack://siteoforigin:,,,/Resources/plus.png"/>
+                </RibbonGroup>
+
+                <RibbonGroup x:Name="grpThemes" Header="Themes">
+                    <RibbonButton Label="New" LargeImageSource="pack://siteoforigin:,,,/Resources/plus.png"/>
+                    <RibbonButton Label="Delete" LargeImageSource="pack://siteoforigin:,,,/Resources/plus.png"/>
+                    <RibbonButton Label="Save" LargeImageSource="pack://siteoforigin:,,,/Resources/plus.png"/>
+                    <RibbonButton Label="Cancel" LargeImageSource="pack://siteoforigin:,,,/Resources/plus.png"/>
+                </RibbonGroup>
+            </RibbonTab>
+
         </Ribbon>
-        
-        <StackPanel Grid.Row="1" Grid.Column="0" Margin="10">
-            <TextBox Margin="5" Text="Testtext"/>
-            <ListBox Margin="5" Height="239" />
+
+        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical">
+            <TextBox Text="Testtext"/>
+            <ListBox ItemsSource="{Binding CollectionItemsList}" 
+                     VerticalAlignment="Stretch"
+                     ItemTemplate="{StaticResource templCollectionItemListItem}"
+                     AlternationCount="2"
+                     ItemContainerStyle="{StaticResource ListBoxItemAlternatingStyle}"
+                     SelectedItem="{Binding SelectedCollectionItem, UpdateSourceTrigger=PropertyChanged}"
+                     />
         </StackPanel>
 
         <StackPanel Grid.Row="2" Grid.ColumnSpan="2">
-            <Label Content="Label" Margin="5"/>
+            <Label Content="{Binding StatusBartext}" />
 
         </StackPanel>
 
@@ -37,13 +89,13 @@
             <StackPanel>
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
@@ -51,7 +103,7 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Label Content="ID and Name" Grid.Column="0" Grid.Row="0"/>
+                    <Label Content="ID and Name" Grid.Column="0" Grid.Row="0" Style="{StaticResource H1}"/>
                     <Label Content="Name" Grid.Column="0" Grid.Row="1"/>
                     <Label Content="Setnumber" Grid.Column="0" Grid.Row="2"/>
                     <Label Content="Theme" Grid.Column="0" Grid.Row="3"/>
@@ -59,21 +111,26 @@
                     <Label Content="Releaseyear" Grid.Column="0" Grid.Row="5"/>
                     <Label Content="Price (EUR)" Grid.Column="0" Grid.Row="6"/>
 
-                    <TextBox Text="name" Grid.Column="1" Grid.Row="1"/>
+                    <TextBox Text="{Binding SelectedCollectionItem.Name}" Grid.Column="1" Grid.Row="1"/>
                     <TextBox Text="setnumber" Grid.Column="1" Grid.Row="2"/>
                     <ComboBox Text="theme" Grid.Column="1" Grid.Row="3"/>
                     <ComboBox Text="location" Grid.Column="1" Grid.Row="4"/>
                     <TextBox Text="releaseyear" Grid.Column="1" Grid.Row="5"/>
-                    <TextBox Text="price" Grid.Column="1" Grid.Row="6"/>
+                    <!--<TextBox Text="price" Grid.Column="1" Grid.Row="6"/>-->
+                    <xctk:DecimalUpDown Grid.Row="6" Grid.Column="1" 
+                                        FormatString="F2"
+                                        Minimum="0" Maximum="9999"
+                                        Increment="1"
+                                        Margin="0 5"/>
 
                 </Grid>
             </StackPanel>
-            <DataGrid Height="99" >
-                
+            <DataGrid>
+
             </DataGrid>
         </StackPanel>
 
 
     </Grid>
 
-</Window>
+</RibbonWindow>

@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "t4colBmAl3RnMPQbok01BTRN40jk2KLjaXAEJ79HKdLt3f5q7ZvfW244FoQfsRKOJpz28QPqG+cDdR32oWjgrg==",
+  "dgSpecHash": "D8y9xJ2PVM4uJAuJhUEn6NtqZSIMcBpOuiiAVI2nsYc5lbAO5PEPnmSHd0fAylTD+twqwplXjgwWL9AZMixT3w==",
   "success": true,
   "projectFilePath": "C:\\SwDeveloper2022\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Gui.Wpf\\Swd.PlayCollector.Gui.Wpf.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\communitytoolkit.mvvm\\8.1.0\\communitytoolkit.mvvm.8.1.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\extended.wpf.toolkit\\4.5.0\\extended.wpf.toolkit.4.5.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -46,6 +48,7 @@
     "C:\\Users\\User\\.nuget\\packages\\syncfusion.licensing\\20.4.0.49\\syncfusion.licensing.20.4.0.49.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\syncfusion.sfgrid.wpf\\20.4.0.49\\syncfusion.sfgrid.wpf.20.4.0.49.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\syncfusion.shared.wpf\\20.4.0.49\\syncfusion.shared.wpf.20.4.0.49.nupkg.sha512",
+    "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\20.4.0.38\\ToolboxNuGetPackages\\syncfusion.ui.wpf.net\\20.4.0.38\\syncfusion.ui.wpf.net.20.4.0.38.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",

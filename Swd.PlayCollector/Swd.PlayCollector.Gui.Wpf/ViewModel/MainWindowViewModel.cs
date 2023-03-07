@@ -47,6 +47,8 @@ namespace Swd.PlayCollector.Gui.Wpf.ViewModel
 
 
 
+
+
     }
 
 }

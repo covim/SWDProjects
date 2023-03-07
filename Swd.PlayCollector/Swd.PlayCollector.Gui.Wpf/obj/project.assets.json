@@ -46,6 +46,77 @@
           }
         }
       },
+      "CommunityToolkit.Mvvm/8.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "Extended.Wpf.Toolkit/4.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Xceed.Wpf.AvalonDock.NET5.dll": {},
+          "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll": {},
+          "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll": {},
+          "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll": {},
+          "lib/net5.0/Xceed.Wpf.Toolkit.NET5.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Xceed.Wpf.AvalonDock.NET5.dll": {},
+          "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll": {},
+          "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll": {},
+          "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll": {},
+          "lib/net5.0/Xceed.Wpf.Toolkit.NET5.dll": {}
+        },
+        "resource": {
+          "lib/net5.0/cs-CZ/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "cs-CZ"
+          },
+          "lib/net5.0/de/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0/es/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0/fr/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0/hu/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net5.0/it/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net5.0/ja-JP/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "ja-JP"
+          },
+          "lib/net5.0/pt-BR/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0/ro/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net5.0/ru/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0/sv/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net5.0/zh-Hans/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -722,6 +793,565 @@
           }
         }
       },
+      "Syncfusion.UI.WPF.NET/20.4.0.38": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/Syncfusion.Calculate.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Compression.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Data.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.DocToPDFConverter.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Edit.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.ExcelChartToImageConverter.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.ExcelToPdfConverter.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Gantt.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Grid.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.GridCommon.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Licensing.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Linq.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.OfficeChart.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.OfficeChartToImageConverter.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.PMML.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Pdf.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.PdfViewer.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.PivotAnalysis.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.PivotAnalysis.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Presentation.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.PresentationToPdfConverter.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.ProjIO.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.PropertyGrid.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfAccordion.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfBarcode.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfBulletGraph.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfBusyIndicator.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfCellGrid.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfChart.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfDiagram.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfDiagramRibbon.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfGauge.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfGrid.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfGridCommon.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfHeatMap.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfHubTile.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfImageEditor.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfInput.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfKanban.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfMaps.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfNavigationDrawer.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfProgressBar.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfRadialMenu.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfRichTextBoxAdv.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfRichTextRibbon.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfSchedule.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfScheduler.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfShared.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfSkinManager.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfSmithChart.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfSpellChecker.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfSpreadsheet.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfSpreadsheetHelper.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfSunburstChart.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfTextInputLayout.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfTreeMap.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfTreeNavigator.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfTreeView.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.Classic.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.dll": {
+            "related": ".Classic.xml;.xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Blend.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.FluentDark.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.FluentLight.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Lime.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.MaterialDark.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.MaterialDarkBlue.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.MaterialLight.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.MaterialLightBlue.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Metro.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2010Black.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2010Blue.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2010Silver.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2013DarkGray.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2013LightGray.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2013White.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2016Colorful.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2016DarkGray.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2016White.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019Black.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019Colorful.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019DarkGray.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019HighContrast.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019HighContrastWhite.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019White.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office365.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Saffron.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.SystemTheme.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.VisualStudio2013.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.VisualStudio2015.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Tools.WPF.Classic.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Tools.WPF.dll": {
+            "related": ".Classic.xml;.xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.XlsIO.Base.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Calculate.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Compression.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Data.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.DocToPDFConverter.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Edit.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.ExcelChartToImageConverter.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.ExcelToPdfConverter.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Gantt.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Grid.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.GridCommon.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Licensing.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Linq.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.OfficeChart.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.OfficeChartToImageConverter.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.PMML.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Pdf.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.PdfViewer.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.PivotAnalysis.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.PivotAnalysis.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Presentation.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.PresentationToPdfConverter.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.ProjIO.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.PropertyGrid.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfAccordion.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfBarcode.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfBulletGraph.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfBusyIndicator.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfCellGrid.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfChart.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfDiagram.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfDiagramRibbon.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfGauge.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfGrid.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfGridCommon.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfHeatMap.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfHubTile.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfImageEditor.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfInput.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfKanban.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfMaps.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfNavigationDrawer.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfProgressBar.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfRadialMenu.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfRichTextBoxAdv.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfRichTextRibbon.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfSchedule.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfScheduler.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfShared.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfSkinManager.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfSmithChart.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfSpellChecker.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfSpreadsheet.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfSpreadsheetHelper.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfSunburstChart.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfTextInputLayout.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfTreeMap.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfTreeNavigator.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.SfTreeView.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.Classic.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.dll": {
+            "related": ".Classic.xml;.xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Blend.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.FluentDark.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.FluentLight.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Lime.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.MaterialDark.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.MaterialDarkBlue.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.MaterialLight.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.MaterialLightBlue.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Metro.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2010Black.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2010Blue.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2010Silver.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2013DarkGray.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2013LightGray.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2013White.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2016Colorful.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2016DarkGray.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2016White.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019Black.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019Colorful.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019DarkGray.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019HighContrast.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019HighContrastWhite.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019White.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office365.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Saffron.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.SystemTheme.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.VisualStudio2013.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Themes.VisualStudio2015.WPF.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Tools.WPF.Classic.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.Tools.WPF.dll": {
+            "related": ".Classic.xml;.xml"
+          },
+          "lib/net6.0-windows7.0/Syncfusion.XlsIO.Base.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -1292,6 +1922,85 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "CommunityToolkit.Mvvm/8.1.0": {
+      "sha512": "xxOt7lu9a5kB5Fs9RfcxzVlKnhuuPe+w7AXHtmCFtS3oldrsUhEMxHfNulluXSscUUoGxZ0jh55Om12ZP6abHA==",
+      "type": "package",
+      "path": "communitytoolkit.mvvm/8.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "License.md",
+        "ThirdPartyNotices.txt",
+        "analyzers/dotnet/roslyn4.0/cs/CommunityToolkit.Mvvm.SourceGenerators.dll",
+        "analyzers/dotnet/roslyn4.3/cs/CommunityToolkit.Mvvm.SourceGenerators.dll",
+        "build/netstandard2.0/CommunityToolkit.Mvvm.targets",
+        "build/netstandard2.1/CommunityToolkit.Mvvm.targets",
+        "buildTransitive/netstandard2.0/CommunityToolkit.Mvvm.targets",
+        "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets",
+        "communitytoolkit.mvvm.8.1.0.nupkg.sha512",
+        "communitytoolkit.mvvm.nuspec",
+        "lib/net6.0/CommunityToolkit.Mvvm.dll",
+        "lib/net6.0/CommunityToolkit.Mvvm.pdb",
+        "lib/net6.0/CommunityToolkit.Mvvm.xml",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.dll",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.pdb",
+        "lib/netstandard2.0/CommunityToolkit.Mvvm.xml",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.dll",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.pdb",
+        "lib/netstandard2.1/CommunityToolkit.Mvvm.xml"
+      ]
+    },
+    "Extended.Wpf.Toolkit/4.5.0": {
+      "sha512": "oQP6Qyuz+3kETAC/s+cBEfb8Vzbju6pB7Q5czW4KdkAOpFJTA/SCox8caH6HLQxQ6Lwq2jCeSQOPJKlnpqpFOg==",
+      "type": "package",
+      "path": "extended.wpf.toolkit/4.5.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "Xceed_Logo_Retina-400x400.png",
+        "extended.wpf.toolkit.4.5.0.nupkg.sha512",
+        "extended.wpf.toolkit.nuspec",
+        "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.dll",
+        "lib/net40/Xceed.Wpf.Toolkit.dll",
+        "lib/net40/cs-CZ/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/ja-JP/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/nl-BE/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net5.0/Xceed.Wpf.AvalonDock.NET5.dll",
+        "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll",
+        "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll",
+        "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll",
+        "lib/net5.0/Xceed.Wpf.Toolkit.NET5.dll",
+        "lib/net5.0/cs-CZ/Xceed.Wpf.AvalonDock.NET5.resources.dll",
+        "lib/net5.0/de/Xceed.Wpf.AvalonDock.NET5.resources.dll",
+        "lib/net5.0/es/Xceed.Wpf.AvalonDock.NET5.resources.dll",
+        "lib/net5.0/fr/Xceed.Wpf.AvalonDock.NET5.resources.dll",
+        "lib/net5.0/hu/Xceed.Wpf.AvalonDock.NET5.resources.dll",
+        "lib/net5.0/it/Xceed.Wpf.AvalonDock.NET5.resources.dll",
+        "lib/net5.0/ja-JP/Xceed.Wpf.AvalonDock.NET5.resources.dll",
+        "lib/net5.0/pt-BR/Xceed.Wpf.AvalonDock.NET5.resources.dll",
+        "lib/net5.0/ro/Xceed.Wpf.AvalonDock.NET5.resources.dll",
+        "lib/net5.0/ru/Xceed.Wpf.AvalonDock.NET5.resources.dll",
+        "lib/net5.0/sv/Xceed.Wpf.AvalonDock.NET5.resources.dll",
+        "lib/net5.0/zh-Hans/Xceed.Wpf.AvalonDock.NET5.resources.dll",
+        "tools/install.ps1"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -2374,6 +3083,242 @@
         "syncfusion.shared.wpf.nuspec",
         "syncfusion_logo.png",
         "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "Syncfusion.UI.WPF.NET/20.4.0.38": {
+      "sha512": "hNn45AgK1x9F0JzfZbuFBuDQNcDz6hcym1GTndfymKH8N79Q0y+etG2cTjPvtTx23xlAK/ijEWBH0wsJGr+NCA==",
+      "type": "package",
+      "path": "syncfusion.ui.wpf.net/20.4.0.38",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net6.0-windows7.0/Design/Syncfusion.Edit.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.Gantt.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.Grid.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.PdfViewer.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.PivotAnalysis.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.PropertyGrid.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfAccordion.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfBarcode.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfBulletGraph.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfBusyIndicator.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfChart.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfDiagram.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfDiagramRibbon.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfGauge.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfGrid.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfHeatMap.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfHubTile.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfImageEditor.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfInput.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfKanban.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfMaps.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfNavigationDrawer.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfProgressBar.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfRadialMenu.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfRichTextBoxAdv.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfRichTextRibbon.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfSchedule.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfScheduler.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfSmithChart.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfSpreadsheet.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfSunburstChart.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfTextInputLayout.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfTreeMap.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfTreeNavigator.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfTreeView.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.Shared.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Design/Syncfusion.Tools.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Calculate.Base.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Calculate.Base.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Compression.Base.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Compression.Base.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Data.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Data.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.DocToPDFConverter.Base.dll",
+        "lib/net6.0-windows7.0/Syncfusion.DocToPDFConverter.Base.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Edit.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Edit.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.ExcelChartToImageConverter.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.ExcelChartToImageConverter.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.ExcelToPdfConverter.Base.dll",
+        "lib/net6.0-windows7.0/Syncfusion.ExcelToPdfConverter.Base.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Gantt.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Gantt.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Grid.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Grid.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.GridCommon.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.GridCommon.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Licensing.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Licensing.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Linq.Base.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Linq.Base.xml",
+        "lib/net6.0-windows7.0/Syncfusion.OfficeChart.Base.dll",
+        "lib/net6.0-windows7.0/Syncfusion.OfficeChart.Base.xml",
+        "lib/net6.0-windows7.0/Syncfusion.OfficeChartToImageConverter.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.OfficeChartToImageConverter.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.PMML.Base.dll",
+        "lib/net6.0-windows7.0/Syncfusion.PMML.Base.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Pdf.Base.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Pdf.Base.xml",
+        "lib/net6.0-windows7.0/Syncfusion.PdfViewer.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.PdfViewer.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.PivotAnalysis.Base.dll",
+        "lib/net6.0-windows7.0/Syncfusion.PivotAnalysis.Base.xml",
+        "lib/net6.0-windows7.0/Syncfusion.PivotAnalysis.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.PivotAnalysis.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Presentation.Base.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Presentation.Base.xml",
+        "lib/net6.0-windows7.0/Syncfusion.PresentationToPdfConverter.Base.dll",
+        "lib/net6.0-windows7.0/Syncfusion.PresentationToPdfConverter.Base.xml",
+        "lib/net6.0-windows7.0/Syncfusion.ProjIO.Base.dll",
+        "lib/net6.0-windows7.0/Syncfusion.ProjIO.Base.xml",
+        "lib/net6.0-windows7.0/Syncfusion.PropertyGrid.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.PropertyGrid.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfAccordion.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfAccordion.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfBarcode.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfBarcode.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfBulletGraph.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfBulletGraph.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfBusyIndicator.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfBusyIndicator.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfCellGrid.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfCellGrid.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfChart.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfChart.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfDiagram.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfDiagram.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfDiagramRibbon.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfDiagramRibbon.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfGauge.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfGauge.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfGrid.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfGrid.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfGridCommon.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfGridCommon.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfHeatMap.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfHeatMap.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfHubTile.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfHubTile.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfImageEditor.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfImageEditor.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfInput.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfInput.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfKanban.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfKanban.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfMaps.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfMaps.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfNavigationDrawer.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfNavigationDrawer.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfProgressBar.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfProgressBar.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfRadialMenu.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfRadialMenu.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfRichTextBoxAdv.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfRichTextBoxAdv.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfRichTextRibbon.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfRichTextRibbon.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfSchedule.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfSchedule.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfScheduler.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfScheduler.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfShared.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfShared.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfSkinManager.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfSkinManager.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfSmithChart.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfSmithChart.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfSpellChecker.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfSpellChecker.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfSpreadsheet.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfSpreadsheet.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfSpreadsheetHelper.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfSpreadsheetHelper.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfSunburstChart.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfSunburstChart.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfTextInputLayout.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfTextInputLayout.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfTreeMap.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfTreeMap.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfTreeNavigator.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfTreeNavigator.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfTreeView.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfTreeView.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.Classic.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.Classic.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Blend.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Blend.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.FluentDark.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.FluentDark.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.FluentLight.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.FluentLight.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Lime.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Lime.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.MaterialDark.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.MaterialDark.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.MaterialDarkBlue.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.MaterialDarkBlue.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.MaterialLight.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.MaterialLight.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.MaterialLightBlue.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.MaterialLightBlue.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Metro.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Metro.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2010Black.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2010Black.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2010Blue.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2010Blue.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2010Silver.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2010Silver.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2013DarkGray.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2013DarkGray.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2013LightGray.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2013LightGray.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2013White.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2013White.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2016Colorful.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2016Colorful.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2016DarkGray.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2016DarkGray.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2016White.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2016White.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019Black.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019Black.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019Colorful.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019Colorful.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019DarkGray.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019DarkGray.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019HighContrast.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019HighContrast.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019HighContrastWhite.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019HighContrastWhite.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019White.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2019White.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office365.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office365.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Saffron.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Saffron.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.SystemTheme.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.SystemTheme.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.VisualStudio2013.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.VisualStudio2013.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.VisualStudio2015.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.VisualStudio2015.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Tools.WPF.Classic.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Tools.WPF.Classic.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Tools.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Tools.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.XlsIO.Base.dll",
+        "lib/net6.0-windows7.0/Syncfusion.XlsIO.Base.xml",
+        "syncfusion.ui.wpf.net.20.4.0.38.nupkg.sha512",
+        "syncfusion.ui.wpf.net.nuspec",
+        "syncfusion_logo.png",
+        "tools/net5.0/VisualStudioToolsManifest.xml"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -3766,12 +4711,15 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "CommunityToolkit.Mvvm >= 8.1.0",
+      "Extended.Wpf.Toolkit >= 4.5.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.2",
       "Swd.PlayCollector.Business >= 1.0.0",
       "Swd.PlayCollector.Model >= 1.0.0",
       "Syncfusion.Licensing >= 20.4.0.49",
-      "Syncfusion.SfGrid.WPF >= 20.4.0.49"
+      "Syncfusion.SfGrid.WPF >= 20.4.0.49",
+      "syncfusion.ui.wpf.net >= 20.4.0.38"
     ]
   },
   "packageFolders": {
@@ -3829,6 +4777,14 @@
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
         "dependencies": {
+          "CommunityToolkit.Mvvm": {
+            "target": "Package",
+            "version": "[8.1.0, )"
+          },
+          "Extended.Wpf.Toolkit": {
+            "target": "Package",
+            "version": "[4.5.0, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[7.0.2, )"
@@ -3846,6 +4802,10 @@
           "Syncfusion.SfGrid.WPF": {
             "target": "Package",
             "version": "[20.4.0.49, )"
+          },
+          "syncfusion.ui.wpf.net": {
+            "target": "Package",
+            "version": "[20.4.0.38, )"
           }
         },
         "imports": [
@@ -3867,7 +4827,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
