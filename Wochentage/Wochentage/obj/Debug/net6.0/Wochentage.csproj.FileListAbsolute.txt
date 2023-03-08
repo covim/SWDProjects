@@ -1,0 +1,15 @@
+C:\SwDeveloper2022\SWDProjects\Wochentage\Wochentage\bin\Debug\net6.0\Wochentage.exe
+C:\SwDeveloper2022\SWDProjects\Wochentage\Wochentage\bin\Debug\net6.0\Wochentage.deps.json
+C:\SwDeveloper2022\SWDProjects\Wochentage\Wochentage\bin\Debug\net6.0\Wochentage.runtimeconfig.json
+C:\SwDeveloper2022\SWDProjects\Wochentage\Wochentage\bin\Debug\net6.0\Wochentage.dll
+C:\SwDeveloper2022\SWDProjects\Wochentage\Wochentage\bin\Debug\net6.0\Wochentage.pdb
+C:\SwDeveloper2022\SWDProjects\Wochentage\Wochentage\obj\Debug\net6.0\Wochentage.csproj.AssemblyReference.cache
+C:\SwDeveloper2022\SWDProjects\Wochentage\Wochentage\obj\Debug\net6.0\Wochentage.GeneratedMSBuildEditorConfig.editorconfig
+C:\SwDeveloper2022\SWDProjects\Wochentage\Wochentage\obj\Debug\net6.0\Wochentage.AssemblyInfoInputs.cache
+C:\SwDeveloper2022\SWDProjects\Wochentage\Wochentage\obj\Debug\net6.0\Wochentage.AssemblyInfo.cs
+C:\SwDeveloper2022\SWDProjects\Wochentage\Wochentage\obj\Debug\net6.0\Wochentage.csproj.CoreCompileInputs.cache
+C:\SwDeveloper2022\SWDProjects\Wochentage\Wochentage\obj\Debug\net6.0\Wochentage.dll
+C:\SwDeveloper2022\SWDProjects\Wochentage\Wochentage\obj\Debug\net6.0\refint\Wochentage.dll
+C:\SwDeveloper2022\SWDProjects\Wochentage\Wochentage\obj\Debug\net6.0\Wochentage.pdb
+C:\SwDeveloper2022\SWDProjects\Wochentage\Wochentage\obj\Debug\net6.0\Wochentage.genruntimeconfig.cache
+C:\SwDeveloper2022\SWDProjects\Wochentage\Wochentage\obj\Debug\net6.0\ref\Wochentage.dll

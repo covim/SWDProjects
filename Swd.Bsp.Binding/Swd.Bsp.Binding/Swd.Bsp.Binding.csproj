@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="syncfusion.ui.wpf.net" Version="20.4.0.38" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="fCollectionBinding.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\fForecast.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="fTemplates.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Resources\playing-cards.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
