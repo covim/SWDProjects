@@ -23,6 +23,7 @@
             <ColumnDefinition Width="75*"/>
         </Grid.ColumnDefinitions>
 
+        <!--Ribbon-->
         <Ribbon Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
             <Ribbon.ApplicationMenu>
                 <RibbonApplicationMenu>
@@ -70,6 +71,7 @@
 
         </Ribbon>
 
+        <!--Search-->
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="35"/>
@@ -87,10 +89,10 @@
 
         </Grid>
         
+        <!--Statusbar-->
         <Label Content="{Binding StatusBartext}" d:Content="1000 items found" Grid.Row="2" Grid.ColumnSpan="2"  Margin="1"/>
 
-
-
+        <!--DetailView-->
         <StackPanel Grid.Row="1" Grid.Column="1" Margin="5,5,5,0" VerticalAlignment="Top" Height="348">
             <StackPanel>
                 <Grid>

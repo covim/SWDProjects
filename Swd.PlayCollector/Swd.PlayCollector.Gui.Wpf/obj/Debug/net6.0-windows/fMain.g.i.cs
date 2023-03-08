@@ -102,7 +102,7 @@ namespace Swd.PlayCollector.Gui.Wpf {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Swd.PlayCollector.Gui.Wpf;component/fmain.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Swd.PlayCollector.Gui.Wpf;V1.0.0.0;component/fmain.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\fMain.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
