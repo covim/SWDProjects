@@ -188,3 +188,8 @@ C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\D
 C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\obj\Debug\net6.0-windows\Swd.PlayCollector.Gui.Wpf.Properties.Resources.resources
 C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\obj\Debug\net6.0-windows\Swd.PlayCollector.Gui.Wpf.csproj.GenerateResource.cache
 C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\CommunityToolkit.Mvvm.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\Resources\add.png
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\Resources\cross.png
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\Resources\disk.png
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\Resources\trash.png
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\Resources\rocket-lunch.png
