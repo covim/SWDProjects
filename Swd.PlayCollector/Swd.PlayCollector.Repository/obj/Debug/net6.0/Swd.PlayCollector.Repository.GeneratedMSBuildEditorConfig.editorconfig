@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Swd.PlayCollector.Repository
-build_property.ProjectDir = C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\
+build_property.ProjectDir = C:\myCode\Repos\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\

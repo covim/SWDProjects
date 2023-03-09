@@ -6,7 +6,7 @@ namespace Swd.PlayCollector.Model;
 public class CollectionItem : ModelBase
 {
     public int Id { get; set; }
-    
+
     [MaxLength(50)]
     [NotNull]
     public string Name { get; set; }
@@ -25,4 +25,20 @@ public class CollectionItem : ModelBase
     public Theme Theme { get; set; }
 
     public List<Media> MediaSet { get; set; }
+
+    public CollectionItem(bool withDefaults) : this()
+    {
+        if (withDefaults)
+        {
+            this.Number = "999";
+            this.Price = 0;
+            this.ReleaseYear = DateTime.Now.Year;
+            this.Name = "abc";
+        }
+    }
+
+    public CollectionItem()
+    {
+
+    }
 }

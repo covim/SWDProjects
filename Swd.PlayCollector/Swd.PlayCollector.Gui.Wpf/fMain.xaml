@@ -40,10 +40,18 @@
 
             <RibbonTab Header="Start">
                 <RibbonGroup x:Name="grpCollectionItem" Header="Collection item" >
-                    <RibbonButton Label="New"  LargeImageSource="pack://siteoforigin:,,,/Resources/add.png" Height="73"/>
-                    <RibbonButton Label="Delete" LargeImageSource="pack://siteoforigin:,,,/Resources/trash.png" Height="73"/>
-                    <RibbonButton Label="Save" LargeImageSource="pack://siteoforigin:,,,/Resources/disk.png" Height="73"/>
-                    <RibbonButton Label="Cancel" LargeImageSource="pack://siteoforigin:,,,/Resources/cross.png" Height="73"/>
+                    <RibbonButton Label="New"  
+                                  Command="{Binding AddCollectionItemCommand}"
+                                  LargeImageSource="pack://siteoforigin:,,,/Resources/add.png" Height="73"/>
+                    <RibbonButton Label="Delete" 
+                                  Command="{Binding DeleteCollectionItemCommand}"
+                                  LargeImageSource="pack://siteoforigin:,,,/Resources/trash.png" Height="73"/>
+                    <RibbonButton Label="Save" 
+                                  Command="{Binding SaveCollectionItemCommand}"
+                                  LargeImageSource="pack://siteoforigin:,,,/Resources/disk.png" Height="73"/>
+                    <RibbonButton Label="Cancel"
+                                  Command="{Binding CancelCommand}"
+                                  LargeImageSource="pack://siteoforigin:,,,/Resources/cross.png" Height="73"/>
                 </RibbonGroup>
 
                 <RibbonGroup x:Name="grpMediaItems" Header="Insert">
@@ -72,22 +80,28 @@
         </Ribbon>
 
         <!--Search-->
-        <Grid Grid.Row="1">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="35"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
+        <DockPanel Grid.Row="1" LastChildFill="True">
 
-            <TextBox Text="...Search" Grid.Row="0"/>
-            <ListBox Grid.Row="1"
+            <TextBox Text="{Binding SearchValue, UpdateSourceTrigger=PropertyChanged}" Grid.Row="0" 
+                     DockPanel.Dock="Top" Margin="5,15,5,10" />
+            <!--<ListBox Grid.Row="1"
                      ItemsSource="{Binding CollectionItemsList}"
                      ItemTemplate="{StaticResource templCollectionItemListItem}"
                      AlternationCount="2"
                      ItemContainerStyle="{StaticResource ListBoxItemAlternatingStyle}"
                      SelectedItem="{Binding SelectedCollectionItem, UpdateSourceTrigger=PropertyChanged}" d:ItemsSource="{d:SampleData ItemCount=10}" 
-                     VerticalContentAlignment="Stretch"/>
+                     VerticalContentAlignment="Stretch"
+                     Margin="5"/>-->
+            <ListView Grid.Row="1"
+                     ItemsSource="{Binding CollectionItemsList}"
+                     ItemTemplate="{StaticResource templCollectionItemListItem}"
+                     AlternationCount="2"
+                     ItemContainerStyle="{StaticResource ListBoxItemAlternatingStyle}"
+                     SelectedItem="{Binding SelectedCollectionItem, UpdateSourceTrigger=PropertyChanged}" d:ItemsSource="{d:SampleData ItemCount=10}" 
+                     VerticalContentAlignment="Stretch"
+                     Margin="5"/>
 
-        </Grid>
+        </DockPanel>
         
         <!--Statusbar-->
         <Label Content="{Binding StatusBartext}" d:Content="1000 items found" Grid.Row="2" Grid.ColumnSpan="2"  Margin="1"/>
@@ -119,17 +133,28 @@
                     <Label Content="Releaseyear" Grid.Column="0" Grid.Row="5"/>
                     <Label Content="Price (EUR)" Grid.Column="0" Grid.Row="6"/>
 
-                    <TextBox Text="{Binding SelectedCollectionItem.Name}" Grid.Column="1" Grid.Row="1"/>
-                    <TextBox Text="{Binding SelectedCollectionItem.Number}" Grid.Column="1" Grid.Row="2"/>
-                    <ComboBox Text="theme" Grid.Column="1" Grid.Row="3"/>
-                    <ComboBox Text="location" Grid.Column="1" Grid.Row="4"/>
-                    <TextBox Text="releaseyear" Grid.Column="1" Grid.Row="5"/>
+                    <TextBox Text="{Binding SelectedCollectionItem.Name, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.Row="1"/>
+                    <TextBox Text="{Binding SelectedCollectionItem.Number, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.Row="2"/>
+                    <ComboBox Text="theme" Grid.Column="1" Grid.Row="3" 
+                              IsEditable="True"
+                              ItemsSource="{Binding ThemeList}"
+                              DisplayMemberPath="Name"
+                              SelectedValuePath="Id"
+                              SelectedValue="{Binding SelectedCollectionItem.ThemeId, UpdateSourceTrigger=PropertyChanged}"/>
+                    <ComboBox Text="location" Grid.Column="1" Grid.Row="4" 
+                              IsEditable="True"
+                              ItemsSource="{Binding LocationList}"
+                              DisplayMemberPath="Name"
+                              SelectedValuePath="Id"
+                              SelectedValue="{Binding SelectedCollectionItem.LocationId, UpdateSourceTrigger=PropertyChanged}"/>
+                    <TextBox Text="{Binding SelectedCollectionItem.ReleaseYear}" Grid.Column="1" Grid.Row="5"/>
                     <!--<TextBox Text="price" Grid.Column="1" Grid.Row="6"/>-->
                     <xctk:DecimalUpDown Grid.Row="6" Grid.Column="1" 
                                         FormatString="F2"
                                         Minimum="0" Maximum="9999"
                                         Increment="1"
-                                        Margin="0 5"/>
+                                        Margin="0 5"
+                                        Value="{Binding SelectedCollectionItem.Price, UpdateSourceTrigger=PropertyChanged}"/>
 
                 </Grid>
             </StackPanel>

@@ -12,6 +12,21 @@ namespace Swd.PlayCollector.Business
             _IRepository = new CollectionItemRepository();
         }
 
+        public async Task AddAsync(CollectionItem item)
+        {
+            await _IRepository.AddAsync(item);
+        }
+
+        public async Task UpdateAsync(CollectionItem item)
+        {
+            await _IRepository.UpdateAsync(item, item.Id);
+        }
+
+        public async Task DeleteAsync(int id)
+        {
+            await _IRepository.DeleteAsync(id);
+        }
+
         public async Task<IQueryable<CollectionItem>> GetAllAsync()
         {
             

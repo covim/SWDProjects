@@ -9,7 +9,7 @@ public class Theme : ModelBase
     
     [MaxLength(50)]
     [NotNull]
-    public int Name { get; set; }
+    public string Name { get; set; }
 
     public List<CollectionItem> CollectionItems { get; set; }
 }

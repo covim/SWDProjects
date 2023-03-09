@@ -3510,28 +3510,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\20.4.0.38\\ToolboxNuGetPackages": {}
+    "C:\\Users\\matthias.covi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\SwDeveloper2022\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Model\\Swd.PlayCollector.Model.csproj",
+      "projectUniqueName": "C:\\myCode\\Repos\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Model\\Swd.PlayCollector.Model.csproj",
       "projectName": "Swd.PlayCollector.Model",
-      "projectPath": "C:\\SwDeveloper2022\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Model\\Swd.PlayCollector.Model.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\SwDeveloper2022\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Model\\obj\\",
+      "projectPath": "C:\\myCode\\Repos\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Model\\Swd.PlayCollector.Model.csproj",
+      "packagesPath": "C:\\Users\\matthias.covi\\.nuget\\packages\\",
+      "outputPath": "C:\\myCode\\Repos\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\20.4.0.38\\ToolboxNuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\matthias.covi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Syncfusion Toolbox for WPF.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -3590,7 +3587,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

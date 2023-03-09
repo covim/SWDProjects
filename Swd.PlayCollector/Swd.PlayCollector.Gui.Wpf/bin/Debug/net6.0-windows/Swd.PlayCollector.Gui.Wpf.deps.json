@@ -1434,7 +1434,7 @@
     "Syncfusion.UI.WPF.NET/20.4.0.38": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hNn45AgK1x9F0JzfZbuFBuDQNcDz6hcym1GTndfymKH8N79Q0y+etG2cTjPvtTx23xlAK/ijEWBH0wsJGr+NCA==",
+      "sha512": "sha512-jPulw6WxukQfM3I6gfrA2z5DSg5aUiXN+XwcZdnsdki9vkfzR9HP97RWtMxnDcT/aJST6zW1dObTz9kz2GEd/Q==",
       "path": "syncfusion.ui.wpf.net/20.4.0.38",
       "hashPath": "syncfusion.ui.wpf.net.20.4.0.38.nupkg.sha512"
     },
