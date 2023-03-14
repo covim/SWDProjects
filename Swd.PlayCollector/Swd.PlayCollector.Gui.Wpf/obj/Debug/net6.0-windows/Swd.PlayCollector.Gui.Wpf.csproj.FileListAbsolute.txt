@@ -388,3 +388,4 @@ C:\myCode\Repos\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\obj\Debu
 C:\myCode\Repos\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\obj\Debug\net6.0-windows\Swd.PlayCollector.Gui.Wpf.pdb
 C:\myCode\Repos\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\obj\Debug\net6.0-windows\Swd.PlayCollector.Gui.Wpf.genruntimeconfig.cache
 C:\myCode\Repos\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\obj\Debug\net6.0-windows\ref\Swd.PlayCollector.Gui.Wpf.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\GongSolutions.WPF.DragDrop.dll

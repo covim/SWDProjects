@@ -9,6 +9,6 @@ namespace Swd.PlayCollector.Repository
 {
     public interface ICollectionItemRepository : IGenericRepository<CollectionItem>
     {
-
+        Task<IQueryable<CollectionItem>> GetAllInklusiveAsync();
     }
 }

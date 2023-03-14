@@ -23,7 +23,7 @@ namespace Swd.PlayCollector.Repository
             get { return _dbSet; }
         }
 
-        //Coonstrucor
+        //Constructor
 
         public GenericRepository()
         {
@@ -52,7 +52,6 @@ namespace Swd.PlayCollector.Repository
         {
             await _dbSet.AddAsync(t);
             await _dbContext.SaveChangesAsync();
-
         }
 
         public void Delete(object key)

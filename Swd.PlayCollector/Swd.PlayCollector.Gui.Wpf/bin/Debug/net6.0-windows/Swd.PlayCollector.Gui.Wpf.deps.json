@@ -16,6 +16,7 @@
           "Swd.PlayCollector.Model": "1.0.0",
           "Syncfusion.Licensing": "20.4.0.49",
           "Syncfusion.SfGrid.WPF": "20.4.0.49",
+          "gong-wpf-dragdrop": "3.2.1",
           "Syncfusion.UI.WPF.NET": "20.4.0.38"
         },
         "runtime": {
@@ -123,6 +124,14 @@
           },
           "lib/net5.0/zh-Hans/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
             "locale": "zh-Hans"
+          }
+        }
+      },
+      "gong-wpf-dragdrop/3.2.1": {
+        "runtime": {
+          "lib/net6.0-windows7.0/GongSolutions.WPF.DragDrop.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.2.1.12"
           }
         }
       },
@@ -1151,6 +1160,13 @@
       "path": "extended.wpf.toolkit/4.5.0",
       "hashPath": "extended.wpf.toolkit.4.5.0.nupkg.sha512"
     },
+    "gong-wpf-dragdrop/3.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-duqBiOHQobupqRdbLYcr+8BQeeuHkvPDHQs9lnLZ03sYkmJbk5ApXqgUfx7hPP7tN9qopFQKl6OlYIHixnI1iw==",
+      "path": "gong-wpf-dragdrop/3.2.1",
+      "hashPath": "gong-wpf-dragdrop.3.2.1.nupkg.sha512"
+    },
     "Humanizer.Core/2.14.1": {
       "type": "package",
       "serviceable": true,
@@ -1434,7 +1450,7 @@
     "Syncfusion.UI.WPF.NET/20.4.0.38": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jPulw6WxukQfM3I6gfrA2z5DSg5aUiXN+XwcZdnsdki9vkfzR9HP97RWtMxnDcT/aJST6zW1dObTz9kz2GEd/Q==",
+      "sha512": "sha512-hNn45AgK1x9F0JzfZbuFBuDQNcDz6hcym1GTndfymKH8N79Q0y+etG2cTjPvtTx23xlAK/ijEWBH0wsJGr+NCA==",
       "path": "syncfusion.ui.wpf.net/20.4.0.38",
       "hashPath": "syncfusion.ui.wpf.net.20.4.0.38.nupkg.sha512"
     },

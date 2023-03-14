@@ -117,6 +117,22 @@
           }
         }
       },
+      "gong-wpf-dragdrop/3.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/GongSolutions.WPF.DragDrop.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/GongSolutions.WPF.DragDrop.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -2003,6 +2019,31 @@
         "tools/install.ps1"
       ]
     },
+    "gong-wpf-dragdrop/3.2.1": {
+      "sha512": "duqBiOHQobupqRdbLYcr+8BQeeuHkvPDHQs9lnLZ03sYkmJbk5ApXqgUfx7hPP7tN9qopFQKl6OlYIHixnI1iw==",
+      "type": "package",
+      "path": "gong-wpf-dragdrop/3.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "GongSolutions.Wpf.DragDrop.png",
+        "LICENSE",
+        "gong-wpf-dragdrop.3.2.1.nupkg.sha512",
+        "gong-wpf-dragdrop.nuspec",
+        "lib/net462/GongSolutions.WPF.DragDrop.dll",
+        "lib/net462/GongSolutions.WPF.DragDrop.xml",
+        "lib/net47/GongSolutions.WPF.DragDrop.dll",
+        "lib/net47/GongSolutions.WPF.DragDrop.xml",
+        "lib/net48/GongSolutions.WPF.DragDrop.dll",
+        "lib/net48/GongSolutions.WPF.DragDrop.xml",
+        "lib/net5.0-windows7.0/GongSolutions.WPF.DragDrop.dll",
+        "lib/net5.0-windows7.0/GongSolutions.WPF.DragDrop.xml",
+        "lib/net6.0-windows7.0/GongSolutions.WPF.DragDrop.dll",
+        "lib/net6.0-windows7.0/GongSolutions.WPF.DragDrop.xml",
+        "lib/netcoreapp3.1/GongSolutions.WPF.DragDrop.dll",
+        "lib/netcoreapp3.1/GongSolutions.WPF.DragDrop.xml"
+      ]
+    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -3086,7 +3127,7 @@
       ]
     },
     "Syncfusion.UI.WPF.NET/20.4.0.38": {
-      "sha512": "jPulw6WxukQfM3I6gfrA2z5DSg5aUiXN+XwcZdnsdki9vkfzR9HP97RWtMxnDcT/aJST6zW1dObTz9kz2GEd/Q==",
+      "sha512": "hNn45AgK1x9F0JzfZbuFBuDQNcDz6hcym1GTndfymKH8N79Q0y+etG2cTjPvtTx23xlAK/ijEWBH0wsJGr+NCA==",
       "type": "package",
       "path": "syncfusion.ui.wpf.net/20.4.0.38",
       "hasTools": true,
@@ -4719,29 +4760,33 @@
       "Swd.PlayCollector.Model >= 1.0.0",
       "Syncfusion.Licensing >= 20.4.0.49",
       "Syncfusion.SfGrid.WPF >= 20.4.0.49",
+      "gong-wpf-dragdrop >= 3.2.1",
       "syncfusion.ui.wpf.net >= 20.4.0.38"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\matthias.covi\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\20.4.0.38\\ToolboxNuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\myCode\\Repos\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Gui.Wpf\\Swd.PlayCollector.Gui.Wpf.csproj",
+      "projectUniqueName": "C:\\SwDeveloper2022\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Gui.Wpf\\Swd.PlayCollector.Gui.Wpf.csproj",
       "projectName": "Swd.PlayCollector.Gui.Wpf",
-      "projectPath": "C:\\myCode\\Repos\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Gui.Wpf\\Swd.PlayCollector.Gui.Wpf.csproj",
-      "packagesPath": "C:\\Users\\matthias.covi\\.nuget\\packages\\",
-      "outputPath": "C:\\myCode\\Repos\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Gui.Wpf\\obj\\",
+      "projectPath": "C:\\SwDeveloper2022\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Gui.Wpf\\Swd.PlayCollector.Gui.Wpf.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\SwDeveloper2022\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Gui.Wpf\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\20.4.0.38\\ToolboxNuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\matthias.covi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Syncfusion Toolbox for WPF.config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows"
@@ -4755,11 +4800,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\myCode\\Repos\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Business\\Swd.PlayCollector.Business.csproj": {
-              "projectPath": "C:\\myCode\\Repos\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Business\\Swd.PlayCollector.Business.csproj"
+            "C:\\SwDeveloper2022\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Business\\Swd.PlayCollector.Business.csproj": {
+              "projectPath": "C:\\SwDeveloper2022\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Business\\Swd.PlayCollector.Business.csproj"
             },
-            "C:\\myCode\\Repos\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Model\\Swd.PlayCollector.Model.csproj": {
-              "projectPath": "C:\\myCode\\Repos\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Model\\Swd.PlayCollector.Model.csproj"
+            "C:\\SwDeveloper2022\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Model\\Swd.PlayCollector.Model.csproj": {
+              "projectPath": "C:\\SwDeveloper2022\\SWDProjects\\Swd.PlayCollector\\Swd.PlayCollector.Model\\Swd.PlayCollector.Model.csproj"
             }
           }
         }
@@ -4800,6 +4845,10 @@
             "target": "Package",
             "version": "[20.4.0.49, )"
           },
+          "gong-wpf-dragdrop": {
+            "target": "Package",
+            "version": "[3.2.1, )"
+          },
           "syncfusion.ui.wpf.net": {
             "target": "Package",
             "version": "[20.4.0.38, )"
@@ -4824,7 +4873,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

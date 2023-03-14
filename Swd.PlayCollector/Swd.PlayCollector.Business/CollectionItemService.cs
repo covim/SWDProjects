@@ -33,5 +33,12 @@ namespace Swd.PlayCollector.Business
             var resultList = await _IRepository.GetAllAsync();
             return resultList;
         }
+
+        public async Task<IQueryable<CollectionItem>> GetAllInklusiveAsync()
+        {
+            //CollectionItemRepository repository = new CollectionItemRepository();
+            var resultList = await _IRepository.GetAllInklusiveAsync();
+            return resultList;
+        }
     }
 }

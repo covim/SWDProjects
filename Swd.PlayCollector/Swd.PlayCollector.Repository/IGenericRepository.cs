@@ -4,8 +4,8 @@ using Microsoft.EntityFrameworkCore.Migrations.Operations;
 
 namespace Swd.PlayCollector.Repository
 {
-    public interface IGenericRepository<TEnity> where TEnity : class, new()   //TEntity muss eine Klasse sein und einen parameterlosen Konstruktor enthalten
-    {
+    public interface IGenericRepository<TEnity> where TEnity : class, new()   // TEntity muss eine Klasse sein und einen parameterlosen Konstruktor enthalten
+    {                                                                         // where ist nicht unbedingt notwendig          
         DbSet<TEnity> DbSet { get; }
 
         
