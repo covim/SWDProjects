@@ -18,6 +18,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Data;
 using System.Windows.Media.Converters;
+using Xceed.Wpf.Toolkit.PropertyGrid.Attributes;
 
 namespace Swd.PlayCollector.Gui.Wpf.ViewModel
 {
@@ -29,13 +30,17 @@ namespace Swd.PlayCollector.Gui.Wpf.ViewModel
         private ObservableCollection<CollectionItem> _collectionItemsList;
         private ObservableCollection<Location> _locationList;
         private ObservableCollection<Theme> _themeList;
+        private ObservableCollection<Media> _mediaList;
+        private ObservableCollection<TypeOfDocument> _typeOfDocumentList;
         private ICollectionView _collectionItemsView;
 
 
         public CollectionItem SelectedCollectionItem
         {
             get { return _selectedCollectionItem; }
-            set { SetProperty(ref _selectedCollectionItem, value);
+            set
+            {
+                SetProperty(ref _selectedCollectionItem, value);
                 this.DeleteCollectionItemCommand.NotifyCanExecuteChanged();
                 this.SaveCollectionItemCommand.NotifyCanExecuteChanged();
             }
@@ -43,8 +48,10 @@ namespace Swd.PlayCollector.Gui.Wpf.ViewModel
         public ICollectionView CollectionItemsView
         {
             get { return _collectionItemsView; }
-            set { SetProperty(ref _collectionItemsView, value);
-                
+            set
+            {
+                SetProperty(ref _collectionItemsView, value);
+
             }
         }
         public ObservableCollection<Theme> ThemeList
@@ -56,6 +63,17 @@ namespace Swd.PlayCollector.Gui.Wpf.ViewModel
         {
             get { return _locationList; }
             set { SetProperty(ref _locationList, value); }
+        }
+
+        public ObservableCollection<Media> MediaList
+        {
+            get { return _mediaList; }
+            set { SetProperty(ref _mediaList, value); }
+        }
+        public ObservableCollection<TypeOfDocument> TypeOfDocumentList
+        {
+            get { return _typeOfDocumentList; }
+            set { SetProperty(ref _typeOfDocumentList, value); }
         }
         public ObservableCollection<CollectionItem> CollectionItemsList
         {
@@ -109,7 +127,7 @@ namespace Swd.PlayCollector.Gui.Wpf.ViewModel
 
         private async Task Import()
         {
-            
+
         }
 
         private bool CanImportExecuted()
@@ -119,7 +137,7 @@ namespace Swd.PlayCollector.Gui.Wpf.ViewModel
 
         private async Task Exit()
         {
-            
+
         }
 
         private bool CanExitExecuted()
@@ -137,16 +155,22 @@ namespace Swd.PlayCollector.Gui.Wpf.ViewModel
             CollectionItemService collectionItemService = new CollectionItemService();
             LocationService locationService = new LocationService();
             ThemeService themeService = new ThemeService();
+            MediaService mediaService = new MediaService();
+            TypeOfDocumentService typeOfDocumentService = new TypeOfDocumentService();
 
             //Task<IQueryable<CollectionItem>> getColectionItemTask = collectionItemService.GetAllAsync();  //lädt MediaSet nicht mit
             Task<IQueryable<CollectionItem>> getColectionItemTask = collectionItemService.GetAllInklusiveAsync();
             Task<IQueryable<Location>> getLocationTask = locationService.GetAllAsync();
             Task<IQueryable<Theme>> getThemeTask = themeService.GetAllAsync();
+            Task<IQueryable<Media>> getMediaTask = mediaService.GetAllAsync();
+            Task<IQueryable<TypeOfDocument>> getTypeOfDocumentTask = typeOfDocumentService.GetAllAsync();
 
 
             this.CollectionItemsList = new ObservableCollection<CollectionItem>(await getColectionItemTask);
             this.LocationList = new ObservableCollection<Location>(await getLocationTask);
             this.ThemeList = new ObservableCollection<Theme>(await getThemeTask);
+            this.MediaList = new ObservableCollection<Media>(await getMediaTask);
+            this.TypeOfDocumentList = new ObservableCollection<TypeOfDocument>(await getTypeOfDocumentTask);
 
         }
 
@@ -222,7 +246,7 @@ namespace Swd.PlayCollector.Gui.Wpf.ViewModel
             bool containsName = collectionItem.Name.Contains(this.SearchValue, StringComparison.CurrentCultureIgnoreCase);
             bool containsId = collectionItem.Id.ToString().Contains(this.SearchValue);
             bool containsSetnumbber = collectionItem.Number.ToString().Contains(this.SearchValue);
-            return containsId||containsName||containsSetnumbber;
+            return containsId || containsName || containsSetnumbber;
         }
 
         public void DragOver(IDropInfo dropInfo)
@@ -232,15 +256,12 @@ namespace Swd.PlayCollector.Gui.Wpf.ViewModel
             {
                 var extension = Path.GetExtension(item);
                 return extension != null && extension.Equals(".png");
-            }) ? DragDropEffects.Copy: DragDropEffects.None;
+            }) ? DragDropEffects.Copy : DragDropEffects.None;
         }
 
         public void Drop(IDropInfo dropInfo)
         {
             string mainFolder = "C:/SwDeveloper2022/SWDData/";
-
-
-
 
             var dragFileList = ((DataObject)dropInfo.Data).GetFileDropList().Cast<string>();
             dropInfo.Effects = dragFileList.Any(item =>
@@ -249,28 +270,59 @@ namespace Swd.PlayCollector.Gui.Wpf.ViewModel
                 return extension != null && extension.Equals(".png");
             }) ? DragDropEffects.Copy : DragDropEffects.None;
 
-            
-            if(SelectedCollectionItem != null)
+            if (SelectedCollectionItem != null)
             {
                 foreach (var item in dragFileList)
                 {
-                    var filename = Path.GetFileName(item);
-                    var newFilePath = mainFolder + SelectedCollectionItem.Id.ToString() + "/";
-                    if (Directory.Exists(newFilePath))
-                    {
-                        File.Copy(item, Path.Combine(newFilePath, filename));
-                    }
-                    else
-                    {
-                        Directory.CreateDirectory(newFilePath);
-                        //File.Create(newFilePath,);
-                        File.Copy(item, Path.Combine(newFilePath, filename));
-
-                    }
+                    var newFilePath = SaveFile(item, mainFolder);
+                    AddToMediaDb(SelectedCollectionItem, newFilePath);
                 }
             }
+            else
+            {
+                MessageBox.Show("Please select an item first.");
+            }
+        }
 
-            
+
+        private async Task AddToMediaDb(CollectionItem item, string newFilePath)
+        {
+            MediaService mediaService = new MediaService();
+            //Task<IQueryable<Media>> getMediaTask = mediaService.GetAllAsync();
+            //var medienListe = new ObservableCollection<Media>(await getMediaTask);
+            Media media = new Media {  CollectionItemId = item.Id, Uri=newFilePath,  Name=Path.GetFileName(newFilePath) , TypeOfDocumentId = this.TypeOfDocumentList[0].Id };
+            await mediaService.AddAsync(media);
+            await LoadDataAsync();
+
+        }
+
+        private string SaveFile(string oldFilePath, string mainFolder)
+        {
+            var fileName = Path.GetFileName(oldFilePath);
+            var newPath = mainFolder + SelectedCollectionItem.Id.ToString() + "/";
+            var newFilePath = Path.Combine(newPath, fileName);
+            if (Directory.Exists(newPath))
+            {
+                if (!File.Exists(newFilePath))
+                {
+                    File.Copy(oldFilePath, newFilePath);
+                    return newFilePath;
+                }
+                else
+                {
+                    MessageBox.Show("File already exists.\nPlease change name and try again.");
+                    return null;
+                }
+            }
+            else
+            {
+                Directory.CreateDirectory(newPath);
+                //File.Create(newFilePath,);
+                File.Copy(oldFilePath, newFilePath);
+                return newFilePath;
+            }
+
+
         }
     }
 }

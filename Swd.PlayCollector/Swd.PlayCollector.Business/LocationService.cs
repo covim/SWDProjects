@@ -14,7 +14,6 @@ namespace Swd.PlayCollector.Business
 
         public async Task<IQueryable<Location>> GetAllAsync()
         {
-            
             var resultList = await _IRepository.GetAllAsync();
             return resultList;
         }
