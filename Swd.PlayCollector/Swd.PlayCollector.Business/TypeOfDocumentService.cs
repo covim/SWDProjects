@@ -37,5 +37,24 @@ namespace Swd.PlayCollector.Business
         {
             throw new NotImplementedException();
         }
+
+        public async Task<TypeOfDocument> GetTypeOfDocumentByFileExtension(string fileExtension)
+        {
+            TypeOfDocument typeOfDocument = new TypeOfDocument { Id = 6, Name = "Unbekannt"};
+            switch (fileExtension.ToLower())
+            {
+                case ".pdf":
+                    typeOfDocument = new TypeOfDocument { Id = 2, Name = "Anleitung" };
+                    break;
+
+                case ".png":
+                case ".jpg":
+                case ".jpeg":
+                    typeOfDocument = new TypeOfDocument { Id = 2, Name = "Anleitung" };
+                    break;
+            }
+            return typeOfDocument;
+        }
+
     }
 }

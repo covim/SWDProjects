@@ -29,7 +29,7 @@ namespace Swd.PlayCollector.Business
 
         public async Task<IQueryable<CollectionItem>> GetAllAsync()
         {
-            
+
             var resultList = await _IRepository.GetAllAsync();
             return resultList;
         }
@@ -40,5 +40,39 @@ namespace Swd.PlayCollector.Business
             var resultList = await _IRepository.GetAllInklusiveAsync();
             return resultList;
         }
+
+        public async Task AddMediaItems(IEnumerable<string> sourceFilePathes, CollectionItem collectionItem)
+        {
+
+            if (collectionItem != null)
+            {
+                foreach (var sourceFilePath in sourceFilePathes)
+                {
+                    string trargetFile = await CopyFile(sourceFilePath, collectionItem.Id);
+                    string fileExtension = Path.GetExtension(trargetFile);
+                    TypeOfDocumentService typeOfDocumentService = new TypeOfDocumentService();
+
+                    Media media = new Media
+                    {
+                        Name = Path.GetFileName(trargetFile),
+                        Uri = string.Format("{0}", collectionItem.Id),
+                        TypeOfDocument = await typeOfDocumentService.GetTypeOfDocumentByFileExtension(fileExtension),
+                        CollectionItem = collectionItem
+                    };
+                    _IRepository.AddMedia(collectionItem, media);
+
+                }
+            }
+        }
+
+        private async Task<string> CopyFile(string sourceFilePath, int id)
+        {
+            // TODO: string durch config wert ersetzen
+            string rootDir = @"C:\\SwDeveloper2022\\SWDData\\PlayCollector";
+            string targetFilePath = Path.Combine(rootDir, id.ToString(), Path.GetFileName(sourceFilePath));
+            FileHelper.CopyFile(sourceFilePath, targetFilePath);
+            return targetFilePath;
+        }
+
     }
 }

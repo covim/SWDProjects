@@ -259,25 +259,23 @@ namespace Swd.PlayCollector.Gui.Wpf.ViewModel
             }) ? DragDropEffects.Copy : DragDropEffects.None;
         }
 
-        public void Drop(IDropInfo dropInfo)
+        public async void Drop(IDropInfo dropInfo)
         {
             string mainFolder = "C:/SwDeveloper2022/SWDData/";
-
-            var dragFileList = ((DataObject)dropInfo.Data).GetFileDropList().Cast<string>();
-            dropInfo.Effects = dragFileList.Any(item =>
-            {
-                var extension = Path.GetExtension(item);
-                return extension != null && extension.Equals(".png");
-            }) ? DragDropEffects.Copy : DragDropEffects.None;
-
             if (SelectedCollectionItem != null)
             {
-                foreach (var item in dragFileList)
+                var dragFileList = ((DataObject)dropInfo.Data).GetFileDropList().Cast<string>();
+                dropInfo.Effects = dragFileList.Any(item =>
                 {
-                    var newFilePath = SaveFile(item, mainFolder);
-                    AddToMediaDb(SelectedCollectionItem, newFilePath);
-                }
-            }
+                    var extension = Path.GetExtension(item);
+                    return extension != null && extension.Equals(".png");
+                }) ? DragDropEffects.Copy : DragDropEffects.None;
+
+                CollectionItemService service = new CollectionItemService();
+                await service.AddMediaItems(dragFileList, SelectedCollectionItem);
+                await LoadDataAsync();
+
+            }                          
             else
             {
                 MessageBox.Show("Please select an item first.");
@@ -285,44 +283,44 @@ namespace Swd.PlayCollector.Gui.Wpf.ViewModel
         }
 
 
-        private async Task AddToMediaDb(CollectionItem item, string newFilePath)
-        {
-            MediaService mediaService = new MediaService();
-            //Task<IQueryable<Media>> getMediaTask = mediaService.GetAllAsync();
-            //var medienListe = new ObservableCollection<Media>(await getMediaTask);
-            Media media = new Media {  CollectionItemId = item.Id, Uri=newFilePath,  Name=Path.GetFileName(newFilePath) , TypeOfDocumentId = this.TypeOfDocumentList[0].Id };
-            await mediaService.AddAsync(media);
-            await LoadDataAsync();
+        //private async Task AddToMediaDb(CollectionItem item, string newFilePath)
+        //{
+        //    MediaService mediaService = new MediaService();
+        //    //Task<IQueryable<Media>> getMediaTask = mediaService.GetAllAsync();
+        //    //var medienListe = new ObservableCollection<Media>(await getMediaTask);
+        //    Media media = new Media {  CollectionItemId = item.Id, Uri=newFilePath,  Name=Path.GetFileName(newFilePath) , TypeOfDocumentId = this.TypeOfDocumentList[0].Id };
+        //    await mediaService.AddAsync(media);
+        //    await LoadDataAsync();
 
-        }
+        //}
 
-        private string SaveFile(string oldFilePath, string mainFolder)
-        {
-            var fileName = Path.GetFileName(oldFilePath);
-            var newPath = mainFolder + SelectedCollectionItem.Id.ToString() + "/";
-            var newFilePath = Path.Combine(newPath, fileName);
-            if (Directory.Exists(newPath))
-            {
-                if (!File.Exists(newFilePath))
-                {
-                    File.Copy(oldFilePath, newFilePath);
-                    return newFilePath;
-                }
-                else
-                {
-                    MessageBox.Show("File already exists.\nPlease change name and try again.");
-                    return null;
-                }
-            }
-            else
-            {
-                Directory.CreateDirectory(newPath);
-                //File.Create(newFilePath,);
-                File.Copy(oldFilePath, newFilePath);
-                return newFilePath;
-            }
+        //private string SaveFile(string oldFilePath, string mainFolder)
+        //{
+        //    var fileName = Path.GetFileName(oldFilePath);
+        //    var newPath = mainFolder + SelectedCollectionItem.Id.ToString() + "/";
+        //    var newFilePath = Path.Combine(newPath, fileName);
+        //    if (Directory.Exists(newPath))
+        //    {
+        //        if (!File.Exists(newFilePath))
+        //        {
+        //            File.Copy(oldFilePath, newFilePath);
+        //            return newFilePath;
+        //        }
+        //        else
+        //        {
+        //            MessageBox.Show("File already exists.\nPlease change name and try again.");
+        //            return null;
+        //        }
+        //    }
+        //    else
+        //    {
+        //        Directory.CreateDirectory(newPath);
+        //        //File.Create(newFilePath,);
+        //        File.Copy(oldFilePath, newFilePath);
+        //        return newFilePath;
+        //    }
 
 
-        }
+        //}
     }
 }
