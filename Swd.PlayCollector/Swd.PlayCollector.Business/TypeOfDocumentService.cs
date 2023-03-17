@@ -40,17 +40,22 @@ namespace Swd.PlayCollector.Business
 
         public async Task<TypeOfDocument> GetTypeOfDocumentByFileExtension(string fileExtension)
         {
-            TypeOfDocument typeOfDocument = new TypeOfDocument { Id = 6, Name = "Unbekannt"};
+            IQueryable<TypeOfDocument> typeOfDocuments;
+            typeOfDocuments = await GetAllAsync();
+            TypeOfDocument typeOfDocument = typeOfDocuments.Where(x=>x.Name == "Anleitung").FirstOrDefault();
+
             switch (fileExtension.ToLower())
             {
                 case ".pdf":
-                    typeOfDocument = new TypeOfDocument { Id = 2, Name = "Anleitung" };
+                    //typeOfDocument = new TypeOfDocument { Id = 2, Name = "Anleitung" };
+                    typeOfDocument = typeOfDocuments.Where(x => x.Name == "Anleitung").FirstOrDefault();
                     break;
 
                 case ".png":
                 case ".jpg":
                 case ".jpeg":
-                    typeOfDocument = new TypeOfDocument { Id = 2, Name = "Anleitung" };
+                    //typeOfDocument = new TypeOfDocument { Id = 2, Name = "Anleitung" };
+                    typeOfDocument = typeOfDocuments.Where(x => x.Name == "Setabbildung").FirstOrDefault();
                     break;
             }
             return typeOfDocument;

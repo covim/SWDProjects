@@ -176,7 +176,7 @@
                           AutoGenerateColumns="False"
                           VerticalScrollBarVisibility="Visible">
                     <DataGrid.Columns>
-                        <DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="Preview">
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
                                     <Image Source="{Binding ImagePath}" Style="{StaticResource imgPreview}"/>
@@ -185,7 +185,7 @@
                         </DataGridTemplateColumn>
                         <DataGridTextColumn Header="Document"/>
                         <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
-                        <DataGridTextColumn Header="Type of Document"/>
+                        <DataGridTextColumn Header="Type of Document" Binding="{Binding TypeOfDocument.Name}"/>
                     </DataGrid.Columns>
                 
                 </DataGrid>
