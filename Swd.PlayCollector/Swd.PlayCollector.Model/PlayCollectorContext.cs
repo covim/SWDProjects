@@ -6,11 +6,7 @@ namespace Swd.PlayCollector.Model
 {
     public class PlayCollectorContext : DbContext
     {
-
         public DbSet<CollectionItem> CollectionItem { get; set; }
-
-
-
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

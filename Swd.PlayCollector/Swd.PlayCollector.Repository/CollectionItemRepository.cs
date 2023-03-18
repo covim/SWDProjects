@@ -33,7 +33,7 @@ namespace Swd.PlayCollector.Repository
         public async Task<IQueryable<CollectionItem>> GetAllInklusiveAsync()
         {
             PlayCollectorContext context = new PlayCollectorContext();
-            return context.CollectionItem.Include(c => c.MediaSet);
+            return context.CollectionItem.Include(c => c.MediaSet).ThenInclude(c=>c.TypeOfDocument);
 
         }
     }
