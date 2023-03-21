@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swd.PlayCollector.Test", "S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swd.PlayCollector.Repository", "Swd.PlayCollector.Repository\Swd.PlayCollector.Repository.csproj", "{65A0EFFE-7350-4AFE-B60C-2E56733B3BB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swd.PlayCollector.Business", "Swd.PlayCollector.Business\Swd.PlayCollector.Business.csproj", "{FB718B5F-8A31-4F71-8DE9-6EB4033B36BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swd.PlayCollector.Business", "Swd.PlayCollector.Business\Swd.PlayCollector.Business.csproj", "{FB718B5F-8A31-4F71-8DE9-6EB4033B36BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swd.PlayCollector.Helper", "Swd.PlayCollector.Helper\Swd.PlayCollector.Helper.csproj", "{DD9DB4D9-9C2E-47E4-9F6E-94E193D5CDE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{FB718B5F-8A31-4F71-8DE9-6EB4033B36BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB718B5F-8A31-4F71-8DE9-6EB4033B36BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB718B5F-8A31-4F71-8DE9-6EB4033B36BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD9DB4D9-9C2E-47E4-9F6E-94E193D5CDE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD9DB4D9-9C2E-47E4-9F6E-94E193D5CDE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD9DB4D9-9C2E-47E4-9F6E-94E193D5CDE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD9DB4D9-9C2E-47E4-9F6E-94E193D5CDE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

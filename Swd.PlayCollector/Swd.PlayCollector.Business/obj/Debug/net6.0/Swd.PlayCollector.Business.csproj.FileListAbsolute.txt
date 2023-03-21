@@ -32,3 +32,5 @@ C:\myCode\Repos\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Business\obj\Deb
 C:\myCode\Repos\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Business\obj\Debug\net6.0\refint\Swd.PlayCollector.Business.dll
 C:\myCode\Repos\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Business\obj\Debug\net6.0\Swd.PlayCollector.Business.pdb
 C:\myCode\Repos\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Business\obj\Debug\net6.0\ref\Swd.PlayCollector.Business.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Business\bin\Debug\net6.0\Swd.PlayCollector.Helper.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Business\bin\Debug\net6.0\Swd.PlayCollector.Helper.pdb

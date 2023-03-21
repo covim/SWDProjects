@@ -389,3 +389,14 @@ C:\myCode\Repos\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\obj\Debu
 C:\myCode\Repos\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\obj\Debug\net6.0-windows\Swd.PlayCollector.Gui.Wpf.genruntimeconfig.cache
 C:\myCode\Repos\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\obj\Debug\net6.0-windows\ref\Swd.PlayCollector.Gui.Wpf.dll
 C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\GongSolutions.WPF.DragDrop.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Binder.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\Swd.PlayCollector.Helper.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\Swd.PlayCollector.Helper.pdb
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\bin\Debug\net6.0-windows\appSettings.json
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Gui.Wpf\obj\Debug\net6.0-windows\Swd.PlayCollector.Gui.Wpf_Content.g.cs

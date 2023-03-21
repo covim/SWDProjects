@@ -26,3 +26,6 @@ C:\myCode\Repos\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Model\obj\Debug\
 C:\myCode\Repos\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Model\obj\Debug\net6.0\Swd.PlayCollector.Model.pdb
 C:\myCode\Repos\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Model\obj\Debug\net6.0\Swd.PlayCollector.Model.genruntimeconfig.cache
 C:\myCode\Repos\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Model\obj\Debug\net6.0\ref\Swd.PlayCollector.Model.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Model\bin\Debug\net6.0\Swd.PlayCollector.Helper.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Model\bin\Debug\net6.0\Swd.PlayCollector.Helper.pdb
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Model\obj\Debug\net6.0\Swd.PlayCollector.Model.csproj.CopyComplete

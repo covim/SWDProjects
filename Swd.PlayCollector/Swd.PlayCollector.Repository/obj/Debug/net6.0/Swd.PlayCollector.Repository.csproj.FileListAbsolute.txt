@@ -28,3 +28,5 @@ C:\myCode\Repos\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\obj\D
 C:\myCode\Repos\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\obj\Debug\net6.0\refint\Swd.PlayCollector.Repository.dll
 C:\myCode\Repos\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\obj\Debug\net6.0\Swd.PlayCollector.Repository.pdb
 C:\myCode\Repos\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\obj\Debug\net6.0\ref\Swd.PlayCollector.Repository.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\bin\Debug\net6.0\Swd.PlayCollector.Helper.dll
+C:\SwDeveloper2022\SWDProjects\Swd.PlayCollector\Swd.PlayCollector.Repository\bin\Debug\net6.0\Swd.PlayCollector.Helper.pdb

@@ -22,7 +22,7 @@ using Xceed.Wpf.Toolkit.PropertyGrid.Attributes;
 
 namespace Swd.PlayCollector.Gui.Wpf.ViewModel
 {
-    public partial class fMainViewModel : ObservableObject, IDropTarget
+    public partial class fMainViewModel : ObservableValidator, IDropTarget
     {
         private string _searchValue;
         private string _statusBarText;

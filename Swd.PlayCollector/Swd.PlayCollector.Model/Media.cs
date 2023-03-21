@@ -1,8 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Swd.PlayCollector.Helper;
 
 namespace Swd.PlayCollector.Model
 {
-    public class Media
+    public class Media: ObservableValidator
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -18,8 +20,8 @@ namespace Swd.PlayCollector.Model
         {
             get
             {
-                // TODO: string durch config wert ersetzen
-                string rootDir = @"C:\\SwDeveloper2022\\SWDData\\PlayCollector";
+                PlayCollectorConfiguration playCollectorConfiguration = new PlayCollectorConfiguration();
+                string rootDir = playCollectorConfiguration.PathToMediaFiles;
                 return Path.Combine(rootDir, Uri, Name);
             }
         }
