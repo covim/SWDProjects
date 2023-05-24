@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="clearsky_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\clearsky_day.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="clearsky_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\clearsky_night.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="clearsky_polartwilight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\clearsky_polartwilight.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cloudy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\cloudy.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fair_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\fair_day.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fair_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\fair_night.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fair_polartwilight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\fair_polartwilight.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\fog.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavyrain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavyrain.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavyrainandthunder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavyrainandthunder.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavyrainshowersandthunder_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavyrainshowersandthunder_day.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavyrainshowersandthunder_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavyrainshowersandthunder_night.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavyrainshowersandthunder_polartwilight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavyrainshowersandthunder_polartwilight.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavyrainshowers_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavyrainshowers_day.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavyrainshowers_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavyrainshowers_night.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavyrainshowers_polartwilight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavyrainshowers_polartwilight.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavysleet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavysleet.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavysleetandthunder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavysleetandthunder.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavysleetshowersandthunder_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavysleetshowersandthunder_day.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavysleetshowersandthunder_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavysleetshowersandthunder_night.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavysleetshowersandthunder_polartwilight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavysleetshowersandthunder_polartwilight.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavysleetshowers_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavysleetshowers_day.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavysleetshowers_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavysleetshowers_night.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavysleetshowers_polartwilight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavysleetshowers_polartwilight.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavysnow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavysnow.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavysnowandthunder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavysnowandthunder.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavysnowshowersandthunder_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavysnowshowersandthunder_day.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavysnowshowersandthunder_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavysnowshowersandthunder_night.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavysnowshowersandthunder_polartwilight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavysnowshowersandthunder_polartwilight.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavysnowshowers_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavysnowshowers_day.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavysnowshowers_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavysnowshowers_night.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavysnowshowers_polartwilight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\heavysnowshowers_polartwilight.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightrain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightrain.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightrainandthunder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightrainandthunder.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightrainshowersandthunder_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightrainshowersandthunder_day.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightrainshowersandthunder_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightrainshowersandthunder_night.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightrainshowersandthunder_polartwilight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightrainshowersandthunder_polartwilight.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightrainshowers_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightrainshowers_day.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightrainshowers_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightrainshowers_night.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightrainshowers_polartwilight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightrainshowers_polartwilight.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightsleet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightsleet.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightsleetandthunder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightsleetandthunder.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightsleetshowers_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightsleetshowers_day.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightsleetshowers_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightsleetshowers_night.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightsleetshowers_polartwilight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightsleetshowers_polartwilight.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightsnow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightsnow.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightsnowandthunder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightsnowandthunder.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightsnowshowers_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightsnowshowers_day.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightsnowshowers_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightsnowshowers_night.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightsnowshowers_polartwilight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightsnowshowers_polartwilight.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightssleetshowersandthunder_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightssleetshowersandthunder_day.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightssleetshowersandthunder_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightssleetshowersandthunder_night.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightssleetshowersandthunder_polartwilight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightssleetshowersandthunder_polartwilight.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightssnowshowersandthunder_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightssnowshowersandthunder_day.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightssnowshowersandthunder_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightssnowshowersandthunder_night.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lightssnowshowersandthunder_polartwilight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\lightssnowshowersandthunder_polartwilight.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="partlycloudy_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\partlycloudy_day.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="partlycloudy_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\partlycloudy_night.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="partlycloudy_polartwilight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\partlycloudy_polartwilight.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\rain.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rainandthunder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\rainandthunder.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rainshowersandthunder_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\rainshowersandthunder_day.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rainshowersandthunder_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\rainshowersandthunder_night.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rainshowersandthunder_polartwilight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\rainshowersandthunder_polartwilight.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rainshowers_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\rainshowers_day.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rainshowers_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\rainshowers_night.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rainshowers_polartwilight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\rainshowers_polartwilight.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sleet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\sleet.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sleetandthunder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\sleetandthunder.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sleetshowersandthunder_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\sleetshowersandthunder_day.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sleetshowersandthunder_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\sleetshowersandthunder_night.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sleetshowersandthunder_polartwilight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\sleetshowersandthunder_polartwilight.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sleetshowers_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\sleetshowers_day.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sleetshowers_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\sleetshowers_night.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sleetshowers_polartwilight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\sleetshowers_polartwilight.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="snow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\snow.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="snowandthunder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\snowandthunder.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="snowshowersandthunder_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\snowshowersandthunder_day.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="snowshowersandthunder_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\snowshowersandthunder_night.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="snowshowersandthunder_polartwilight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\snowshowersandthunder_polartwilight.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="snowshowers_day" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\snowshowers_day.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="snowshowers_night" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\snowshowers_night.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="snowshowers_polartwilight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\snowshowers_polartwilight.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
